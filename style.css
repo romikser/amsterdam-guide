@@ -17,3 +17,13 @@
 .card details ul{padding-left:17px;margin:8px 0}
 .card details li{margin-bottom:5px}
 @media(max-width:620px){.hero p{font-size:13px}.hero-actions a{font-size:10px}}
+/* Scoped Apple Maps Guide and full-list exports */
+.export-box{margin-top:24px;padding:16px;border:1px solid #111;background:#f7f8f6;max-width:900px}
+.export-actions{display:flex;flex-wrap:wrap;gap:8px}
+.export-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;background:#111;border:1px solid #111;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.05em;font-size:11px;font-weight:bold;line-height:1.35;text-align:center}
+.export-button:hover,.export-button:focus-visible{background:#087549;border-color:#087549;color:#fff}
+.export-button.secondary{background:#fff;color:#111}
+.export-button.secondary:hover,.export-button.secondary:focus-visible{color:#087549;border-color:#087549}
+.hero .export-box p{margin:10px 0 0;font-size:11px;line-height:1.55;color:#555}
+.export-caveat{margin-top:12px;font-size:11px}.export-caveat summary{cursor:pointer;text-decoration:underline;text-underline-offset:2px}.export-caveat ul{margin:8px 0 0;padding-left:18px}.export-caveat li{margin:5px 0}
+@media(max-width:620px){.export-actions{flex-direction:column}.export-button{width:100%}}

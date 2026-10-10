@@ -1,0 +1,846 @@
+[
+  {
+    "name": "Scandinavian Embassy",
+    "area": "de-pijp",
+    "type": "coffee-matcha",
+    "id": "IA7558CC52F636E50",
+    "query": "Scandinavian Embassy Sarphatipark Amsterdam",
+    "reason": "",
+    "apple_title": "Scandinavian Embassy",
+    "apple_destination": "Scandinavian Embassy, Sarphatipark 34, 1072 PB Amsterdam, Netherlands"
+  },
+  {
+    "name": "LERA Matcha",
+    "area": "de-pijp",
+    "type": "coffee-matcha",
+    "id": "I4F8827B51C131481",
+    "query": "LERA Matcha Ferdinand Bolstraat Amsterdam",
+    "reason": "",
+    "apple_title": "LERA",
+    "apple_destination": "LERA, Ferdinand Bolstraat 146, 1072 LS Amsterdam, Netherlands"
+  },
+  {
+    "name": "Albert Cuyp Market",
+    "area": "de-pijp",
+    "type": "markets",
+    "id": "ID3AFE3B23CE8E307",
+    "query": "Albert Cuypmarkt Amsterdam",
+    "reason": "",
+    "apple_title": "Albert Cuypmarkt",
+    "apple_destination": "Albert Cuypmarkt, Albert Cuypstraat, 1073 BD Amsterdam, Netherlands"
+  },
+  {
+    "name": "Record Mania",
+    "area": "de-pijp",
+    "type": "vinyl",
+    "id": "I90E1424B8F7D442C",
+    "query": "Record Mania Ferdinand Bolstraat Amsterdam",
+    "reason": "",
+    "apple_title": "Record Mania",
+    "apple_destination": "Record Mania, Ferdinand Bolstraat 30, 1072 LK Amsterdam, Netherlands"
+  },
+  {
+    "name": "Spang Makandra",
+    "area": "de-pijp",
+    "type": "street-food",
+    "id": "I75B175DA58A3678E",
+    "query": "Spang Makandra Amsterdam De Pijp",
+    "reason": "",
+    "apple_title": "Warung Spang-Makandra",
+    "apple_destination": "Warung Spang-Makandra, Gerard Doustraat 33, 1072 VK Amsterdam, Netherlands"
+  },
+  {
+    "name": "Verse",
+    "area": "de-pijp",
+    "type": "clothes",
+    "id": "IE6DCC74C8B5D44F7",
+    "query": "Verse Gerard Doustraat Amsterdam",
+    "reason": "",
+    "apple_title": "Verse Good Store",
+    "apple_destination": "Verse Good Store, Gerard Doustraat 84, 1072 VW Amsterdam, Netherlands"
+  },
+  {
+    "name": "Baskèts",
+    "area": "de-pijp",
+    "type": "clothes",
+    "id": "I786321471700D934",
+    "query": "Baskèts Gerard Doustraat Amsterdam",
+    "reason": "",
+    "apple_title": "Baskèts",
+    "apple_destination": "Baskèts, Gerard Doustraat 96A, 1072 VX Amsterdam, Netherlands"
+  },
+  {
+    "name": "Noemi",
+    "area": "de-pijp",
+    "type": "street-food",
+    "id": "IEB69FEB857B81137",
+    "query": "Noemi Van Woustraat Hemonylaan Amsterdam",
+    "reason": "",
+    "apple_title": "Noemi",
+    "apple_destination": "Noemi, Van Woustraat 9, 1074 AA Amsterdam, Netherlands"
+  },
+  {
+    "name": "Le Smash",
+    "area": "de-pijp",
+    "type": "street-food",
+    "id": "I721E974D4CB48961",
+    "query": "Le Smash Govert Flinckstraat Amsterdam",
+    "reason": "",
+    "apple_title": "Le Smash",
+    "apple_destination": "Le Smash, Govert Flinckstraat 122, 1072 EM Amsterdam, Netherlands"
+  },
+  {
+    "name": "Little Collins",
+    "area": "de-pijp",
+    "type": "restaurants",
+    "id": "IAEE6D3A0E3564C44",
+    "query": "Little Collins Eerste Sweelinckstraat Amsterdam",
+    "reason": "",
+    "apple_title": "Little Collins",
+    "apple_destination": "Little Collins, Eerste Sweelinck Straat 19F, 1073 CL Amsterdam, Netherlands"
+  },
+  {
+    "name": "Bar Mokum",
+    "area": "de-pijp",
+    "type": "bars-music",
+    "id": "I477B81B11DD7A9CB",
+    "query": "Bar Mokum Ferdinand Bolstraat Amsterdam",
+    "reason": "",
+    "apple_title": "Bar Mokum",
+    "apple_destination": "Bar Mokum, Ferdinand Bolstraat 11, 1072 LA Amsterdam, Netherlands"
+  },
+  {
+    "name": "Ceintuur Theater",
+    "area": "de-pijp",
+    "type": "restaurants",
+    "id": "ICD841D5687CE936A",
+    "query": "Ceintuur Theater Ceintuurbaan Amsterdam",
+    "reason": "",
+    "apple_title": "Ceintuur Theater",
+    "apple_destination": "Ceintuur Theater, Ceintuurbaan 282-284, 1072 GK Amsterdam, Netherlands"
+  },
+  {
+    "name": "Uncommon",
+    "area": "oud-west",
+    "type": "coffee-matcha",
+    "id": "I81D712EF47B3EFCB",
+    "query": "Uncommon Amsterdam Eerste Constantijn Huygensstraat",
+    "reason": "",
+    "apple_title": "Uncommon Cafe",
+    "apple_destination": "Uncommon Cafe, 1e Constantijn Huygensstraat 63H, 1054 BT Amsterdam, Netherlands"
+  },
+  {
+    "name": "Ten Katemarkt",
+    "area": "oud-west",
+    "type": "markets",
+    "id": "IA98D5F8A5C522349",
+    "query": "Ten Katemarkt Amsterdam",
+    "reason": "",
+    "apple_title": "Ten Katemarket",
+    "apple_destination": "Ten Katemarket, Ten Katestraat, 1053 CG Amsterdam, Netherlands"
+  },
+  {
+    "name": "nNea",
+    "area": "oud-west",
+    "type": "restaurants",
+    "id": "I1E41F0036EA57976",
+    "query": "nNea Bilderdijkstraat Amsterdam",
+    "reason": "",
+    "apple_title": "nNea",
+    "apple_destination": "nNea, Bilderdijkstraat 92, 1053 KX Amsterdam, Netherlands"
+  },
+  {
+    "name": "Foodhallen",
+    "area": "oud-west",
+    "type": "street-food",
+    "id": "I5F1B9B69161E42E5",
+    "query": "Foodhallen Amsterdam",
+    "reason": "",
+    "apple_title": "Foodhallen",
+    "apple_destination": "Foodhallen, Bellamyplein 51, 1053 AT Amsterdam, Netherlands"
+  },
+  {
+    "name": "Bar Centraal",
+    "area": "oud-west",
+    "type": "bars-music",
+    "id": "IC63AE1590C49A1EB",
+    "query": "Bar Centraal Ten Katestraat Amsterdam",
+    "reason": "",
+    "apple_title": "Bar Centraal",
+    "apple_destination": "Bar Centraal, Ten Katestraat 16, 1053 CE Amsterdam, Netherlands"
+  },
+  {
+    "name": "TORCH Gallery",
+    "area": "jordaan",
+    "type": "art",
+    "id": "IE07606133DC7929",
+    "query": "TORCH Gallery Lauriergracht Amsterdam",
+    "reason": "",
+    "apple_title": "Torch Gallery",
+    "apple_destination": "Torch Gallery, Lauriergracht 94, 1016 RN Amsterdam, Netherlands"
+  },
+  {
+    "name": "Ron Mandos — Zanele Muholi",
+    "area": "jordaan",
+    "type": "art",
+    "id": "IA54FEEA06193FC78",
+    "query": "Galerie Ron Mandos Prinsengracht 282 Amsterdam",
+    "reason": "",
+    "apple_title": "Galerie Ron Mandos",
+    "apple_destination": "Galerie Ron Mandos, Prinsengracht 282, 1016 HJ Amsterdam, Netherlands"
+  },
+  {
+    "name": "Distortion Records",
+    "area": "jordaan",
+    "type": "vinyl",
+    "id": "IBCDEA4838C7A6F48",
+    "query": "Distortion Records Westerstraat Amsterdam",
+    "reason": "",
+    "apple_title": "Distortion Records",
+    "apple_destination": "Distortion Records, Westerstraat 244, 1015 MT Amsterdam, Netherlands"
+  },
+  {
+    "name": "Rum Baba Elandsgracht",
+    "area": "jordaan",
+    "type": "coffee-matcha",
+    "id": "I7ADF469A4D12B2C8",
+    "query": "Rum Baba Elandsgracht Amsterdam",
+    "reason": "",
+    "apple_title": "Rum Baba",
+    "apple_destination": "Rum Baba, Elandsgracht 134, 1016 VC Amsterdam, Netherlands"
+  },
+  {
+    "name": "Waxwell Records",
+    "area": "nine-streets",
+    "type": "vinyl",
+    "id": "I839948FB8CE0D412",
+    "query": "Waxwell Gasthuismolensteeg Amsterdam",
+    "reason": "",
+    "apple_title": "Waxwell Records",
+    "apple_destination": "Waxwell Records, Gasthuismolensteeg 6, 1016 AN Amsterdam, Netherlands"
+  },
+  {
+    "name": "Rush Hour",
+    "area": "centrum",
+    "type": "vinyl",
+    "id": "IDE12477571E3D0A5",
+    "query": "Rush Hour Spuistraat 110 Amsterdam",
+    "reason": "",
+    "apple_title": "Rush Hour",
+    "apple_destination": "Rush Hour, Spuistraat 110, 1012 VA Amsterdam, Netherlands"
+  },
+  {
+    "name": "Concrete",
+    "area": "centrum",
+    "type": "clothes",
+    "id": "I326E5B99BF50B739",
+    "query": "Concrete Spuistraat 250 Amsterdam",
+    "reason": "",
+    "apple_title": "Concrete",
+    "apple_destination": "Concrete, Spuistraat 250, 1012 VW Amsterdam, Netherlands"
+  },
+  {
+    "name": "X BANK",
+    "area": "centrum",
+    "type": "clothes",
+    "id": "IFD5572FF1D2A4135",
+    "query": "X BANK Spuistraat 172 Amsterdam",
+    "reason": "",
+    "apple_title": "X Bank",
+    "apple_destination": "X Bank, Spuistraat 172, 1012 VT Amsterdam, Netherlands"
+  },
+  {
+    "name": "Ken Sushi",
+    "area": "centrum",
+    "type": "restaurants",
+    "id": "IAB33443011D98B3A",
+    "query": "Ken Sushi Geldersekade Amsterdam",
+    "reason": "",
+    "apple_title": "Ken Sushi",
+    "apple_destination": "Ken Sushi, Geldersekade 19, 1011 EJ Amsterdam, Netherlands"
+  },
+  {
+    "name": "Upstream — Leegte / Rozendaal",
+    "area": "centrum",
+    "type": "art",
+    "id": null,
+    "query": "Kloveniersburgwal 95, 1011 KB Amsterdam",
+    "reason": "Apple Maps lists an old address; no verified current gallery pin."
+  },
+  {
+    "name": "RecordFriend",
+    "area": "centrum",
+    "type": "vinyl",
+    "id": "IC12F5A712273F0F4",
+    "query": "RecordFriend Sint Antoniesbreestraat Amsterdam",
+    "reason": "",
+    "apple_title": "RecordFriend Elpees",
+    "apple_destination": "RecordFriend Elpees, Sint Antoniesbreestraat 64, 1011 HB Amsterdam, Netherlands"
+  },
+  {
+    "name": "Concerto",
+    "area": "canal-belt",
+    "type": "vinyl",
+    "id": "IBCA957D93C8E965E",
+    "query": "Concerto Utrechtsestraat Amsterdam",
+    "reason": "",
+    "apple_title": "Concerto",
+    "apple_destination": "Concerto, Utrechtsestraat 52-60, 1017 VP Amsterdam, Netherlands"
+  },
+  {
+    "name": "Huis Marseille",
+    "area": "canal-belt",
+    "type": "art",
+    "id": "I59CB3CBA2CD24D66",
+    "query": "Huis Marseille Keizersgracht Amsterdam",
+    "reason": "",
+    "apple_title": "Huis Marseille Museum voor Fotografie",
+    "apple_destination": "Huis Marseille Museum voor Fotografie, Keizersgracht 401, 1016 EK Amsterdam, Netherlands"
+  },
+  {
+    "name": "Foam — Hailun Ma / Kander",
+    "area": "canal-belt",
+    "type": "art",
+    "id": "IF21F6A6646A7B712",
+    "query": "Foam Keizersgracht 609 Amsterdam",
+    "reason": "",
+    "apple_title": "Foam",
+    "apple_destination": "Foam, Keizersgracht 609, 1017 DS Amsterdam, Netherlands"
+  },
+  {
+    "name": "GRIMM — Charles Avery",
+    "area": "canal-belt",
+    "type": "art",
+    "id": "I5554E9CF06085F9D",
+    "query": "GRIMM Leidsegracht 38-40 Amsterdam",
+    "reason": "",
+    "apple_title": "GRIMM",
+    "apple_destination": "GRIMM, Leidsegracht 38-40, 1016 CM Amsterdam, Netherlands"
+  },
+  {
+    "name": "The Frozen Fountain",
+    "area": "canal-belt",
+    "type": "clothes",
+    "id": "IF8A741384D553471",
+    "query": "The Frozen Fountain Prinsengracht Amsterdam",
+    "reason": "",
+    "apple_title": "The Frozen Fountain",
+    "apple_destination": "The Frozen Fountain, Prinsengracht 645, 1016 HV Amsterdam, Netherlands"
+  },
+  {
+    "name": "Dappermarkt",
+    "area": "oost",
+    "type": "markets",
+    "id": "I5810564B57531788",
+    "query": "Dappermarkt Amsterdam",
+    "reason": "",
+    "apple_title": "Dappermarket - Apple Maps",
+    "apple_destination": "Dappermarket, Dapperstraat, 1093 BS Amsterdam, Netherlands"
+  },
+  {
+    "name": "De Kas",
+    "area": "oost",
+    "type": "restaurants",
+    "id": "IE3B66BAA8BAE58D7",
+    "query": "Restaurant De Kas Amsterdam",
+    "reason": "",
+    "apple_title": "Restaurant De Kas",
+    "apple_destination": "Restaurant De Kas, Kamerlingh Onnes Laan 3, 1097 DE Amsterdam, Netherlands"
+  },
+  {
+    "name": "Shigure",
+    "area": "oost",
+    "type": "restaurants",
+    "id": "I615C4F0A8CF8A995",
+    "query": "Shigure Andreas Bonnstraat Amsterdam",
+    "reason": "",
+    "apple_title": "Shigure",
+    "apple_destination": "Shigure, Andreas Bonnstraat 36, 1091 BA Amsterdam, Netherlands"
+  },
+  {
+    "name": "Rum Baba East",
+    "area": "oost",
+    "type": "coffee-matcha",
+    "id": "IE4927C67244AEBF0",
+    "query": "Rum Baba East Pretoriusstraat Amsterdam",
+    "reason": "",
+    "apple_title": "Rum Baba Coffeeroasters",
+    "apple_destination": "Rum Baba Coffeeroasters, Pretoriusstraat 15, 1092 EW Amsterdam, Netherlands"
+  },
+  {
+    "name": "STRAAT",
+    "area": "noord",
+    "type": "art",
+    "id": "I6984264544F9660F",
+    "query": "STRAAT Museum NDSM Amsterdam",
+    "reason": "",
+    "apple_title": "STRAAT Museum",
+    "apple_destination": "STRAAT Museum, Ndsm-Plein 1, 1033 WC Amsterdam, Netherlands"
+  },
+  {
+    "name": "Garage Noord",
+    "area": "noord",
+    "type": "bars-music",
+    "id": "I8BF93D912E5610B",
+    "query": "Garage Noord Gedempt Hamerkanaal Amsterdam",
+    "reason": "",
+    "apple_title": "Garage Noord",
+    "apple_destination": "Garage Noord, Gedempt Hamerkanaal 40, 1021 KM Amsterdam, Netherlands"
+  },
+  {
+    "name": "Stedelijk",
+    "area": "museumkwartier",
+    "type": "art",
+    "id": "IAE6B16E3843EEE54",
+    "query": "Stedelijk Museum Amsterdam",
+    "reason": "",
+    "apple_title": "Stedelijk Museum",
+    "apple_destination": "Stedelijk Museum, Museumplein 10, 1071 DJ Amsterdam, Nederland"
+  },
+  {
+    "name": "Rijksmuseum",
+    "area": "museumkwartier",
+    "type": "art",
+    "id": "I739D75E1091878B8",
+    "query": "Rijksmuseum Amsterdam",
+    "reason": "",
+    "apple_title": "Rijksmuseum",
+    "apple_destination": "Rijksmuseum, Museumstraat 1, 1071 XX Amsterdam, Netherlands"
+  },
+  {
+    "name": "Van Gogh Museum",
+    "area": "museumkwartier",
+    "type": "art",
+    "id": "I9F7B0AAB25280960",
+    "query": "Van Gogh Museum Amsterdam",
+    "reason": "",
+    "apple_title": "Van Gogh Museum",
+    "apple_destination": "Van Gogh Museum, Museumplein 6, 1071 DJ Amsterdam, Netherlands"
+  },
+  {
+    "name": "FOUR",
+    "area": "museumkwartier",
+    "type": "clothes",
+    "id": "IE93E9526F408385",
+    "query": "FOUR Amsterdam Van Baerlestraat",
+    "reason": "",
+    "apple_title": "FOUR - Apple Maps",
+    "apple_destination": "FOUR, Van Baerlestraat 9-11, 1071 AM Amsterdam, Niederlande"
+  },
+  {
+    "name": "White Label West",
+    "area": "de-baarsjes",
+    "type": "coffee-matcha",
+    "id": "I266DBA71D6456935",
+    "query": "White Label Coffee Jan Evertsenstraat Amsterdam",
+    "reason": "",
+    "apple_title": "white label coffee",
+    "apple_destination": "white label coffee, Jan Evertsenstraat 136, 1056 EK Amsterdam, Netherlands"
+  },
+  {
+    "name": "Middle East Archive × Foam",
+    "area": "de-baarsjes",
+    "type": "art",
+    "id": null,
+    "query": "Foam Middle East Archive Mercatorplein Amsterdam",
+    "reason": "No distinct Apple Maps pin for the temporary Mercatorplein exhibition."
+  },
+  {
+    "name": "Harmani Microroasterie",
+    "area": "de-pijp",
+    "type": "coffee-matcha",
+    "id": "I363F11DD1A9A2C6C",
+    "query": "Harmani Frans Halsstraat 89 Amsterdam",
+    "reason": "",
+    "apple_title": "Harmani Amsterdam",
+    "apple_destination": "Harmani Amsterdam, Frans Halsstraat 89H, 1072 BP Amsterdam, Netherlands"
+  },
+  {
+    "name": "Rudi’s Original Stroopwafels",
+    "area": "de-pijp",
+    "type": "street-food",
+    "id": "IB4FFF8C1BD503CB7",
+    "query": "Rudi Original Stroopwafels Albert Cuypstraat 182 Amsterdam",
+    "reason": "",
+    "apple_title": "Original Stroopwafels",
+    "apple_destination": "Original Stroopwafels, Albert Cuypstraat 182, 1073 BL Amsterdam, Netherlands"
+  },
+  {
+    "name": "Tjin’s",
+    "area": "de-pijp",
+    "type": "street-food",
+    "id": "IEFEDC7A962F9B5F",
+    "query": "Tjin’s Van Woustraat 17 Amsterdam",
+    "reason": "",
+    "apple_title": "Tjin's",
+    "apple_destination": "Tjin"
+  },
+  {
+    "name": "LOT61 Kinkerstraat",
+    "area": "oud-west",
+    "type": "coffee-matcha",
+    "id": "I4AB05CEEFFA02EE9",
+    "query": "LOT61 Kinkerstraat 112 Amsterdam",
+    "reason": "",
+    "apple_title": "LOT61",
+    "apple_destination": "LOT61, Kinkerstraat 112, 1053 ED Amsterdam, Netherlands"
+  },
+  {
+    "name": "Five Ways Coffee Roasters",
+    "area": "oud-west",
+    "type": "coffee-matcha",
+    "id": "I271C691C4260AD32",
+    "query": "Five Ways Coffee Kinkerstraat 186 Amsterdam",
+    "reason": "",
+    "apple_title": "Five Ways Coffee Amsterdam - Apple Maps",
+    "apple_destination": "Five Ways Coffee Amsterdam, Kinkerstraat 186, 1053 CG Amsterdam, Nederland"
+  },
+  {
+    "name": "Trakteren",
+    "area": "oud-west",
+    "type": "coffee-matcha",
+    "id": "IFDF9F7D7F564593D",
+    "query": "Trakteren Jan Pieter Heijestraat 119A Amsterdam",
+    "reason": "",
+    "apple_title": "Trakteren Koffie",
+    "apple_destination": "Trakteren Koffie, Jan Pieter Heijestraat 119A, 1054 MD Amsterdam, Netherlands"
+  },
+  {
+    "name": "KYŌ-KLUB",
+    "area": "oud-west",
+    "type": "coffee-matcha",
+    "id": "IE26C62072DD6D83A",
+    "query": "KYO KLUB Kinkerstraat 334 Amsterdam",
+    "reason": "",
+    "apple_title": "KYŌ-KLUB",
+    "apple_destination": "KYŌ-KLUB, Kinkerstraat 334, 1053 GE Amsterdam, Netherlands"
+  },
+  {
+    "name": "Haku Specialty Coffee",
+    "area": "jordaan",
+    "type": "coffee-matcha",
+    "id": "IF007F3F92676AC12",
+    "query": "Haku Specialty Coffee Rozengracht 69 Amsterdam",
+    "reason": "",
+    "apple_title": "Haku Specialty Coffee",
+    "apple_destination": "Haku Specialty Coffee, Rozengracht 69, 1016 LT Amsterdam, Netherlands"
+  },
+  {
+    "name": "SAINT-JEAN Bakery",
+    "area": "jordaan",
+    "type": "street-food",
+    "id": "ID44165C0ED2A7F68",
+    "query": "Saint Jean Bakery Lindengracht 158 Amsterdam",
+    "reason": "",
+    "apple_title": "Saint-Jean",
+    "apple_destination": "Saint-Jean, Lindengracht 158H, 1015 KK Amsterdam, Netherlands"
+  },
+  {
+    "name": "SAINT-JEAN Deli",
+    "area": "jordaan",
+    "type": "street-food",
+    "id": "IAA172811E0E69E92",
+    "query": "Saint Jean Deli Lindengracht 99 Amsterdam",
+    "reason": "",
+    "apple_title": "Saint-Jean Deli",
+    "apple_destination": "Saint-Jean Deli, Lindengracht 99, 1015 KD Amsterdam, Netherlands"
+  },
+  {
+    "name": "Davie’s",
+    "area": "jordaan",
+    "type": "street-food",
+    "id": "I7D4DCF0A4120A8B",
+    "query": "Davies Tweede Leliedwarsstraat 13 Amsterdam",
+    "reason": "",
+    "apple_title": "Davie’s Amsterdam",
+    "apple_destination": "Davie’s Amsterdam, 2e Leliedwarsstraat 13, 1015 TB Amsterdam, Netherlands"
+  },
+  {
+    "name": "Screaming Beans Runstraat",
+    "area": "nine-streets",
+    "type": "coffee-matcha",
+    "id": "I1D344C5A68F1EC57",
+    "query": "Screaming Beans Runstraat 6 Amsterdam",
+    "reason": "",
+    "apple_title": "Screaming Beans",
+    "apple_destination": "Screaming Beans, Runstraat 6, 1016 GK Amsterdam, Netherlands"
+  },
+  {
+    "name": "Chun Café",
+    "area": "nine-streets",
+    "type": "coffee-matcha",
+    "id": "I2FDF4C1A422E4A41",
+    "query": "Chun Cafe Berenstraat 8 Amsterdam",
+    "reason": "",
+    "apple_title": "Chun",
+    "apple_destination": "Chun, Berenstraat 8, 1016 GH Amsterdam, Netherlands"
+  },
+  {
+    "name": "Black Gold Amsterdam",
+    "area": "centrum",
+    "type": "coffee-matcha",
+    "id": "I7C15C1BAC73964B2",
+    "query": "Black Gold Korte Koningsstraat 13 Amsterdam",
+    "reason": "",
+    "apple_title": "Black Gold",
+    "apple_destination": "Black Gold, Korte Koningsstraat 13, 1011 EX Amsterdam, Netherlands"
+  },
+  {
+    "name": "Sango",
+    "area": "centrum",
+    "type": "coffee-matcha",
+    "id": "I98AFFDEB7B79EEA2",
+    "query": "Sango Stromarkt 15 Amsterdam",
+    "reason": "",
+    "apple_title": "Sango",
+    "apple_destination": "Sango, Stromarkt 15, 1012 SW Amsterdam, Netherlands"
+  },
+  {
+    "name": "TOKI",
+    "area": "haarlemmerbuurt",
+    "type": "coffee-matcha",
+    "id": "I58AAC9D0B22E443F",
+    "query": "TOKI Binnen Dommersstraat 15 Amsterdam",
+    "reason": "",
+    "apple_title": "Toki",
+    "apple_destination": "Toki, Binnen Dommersstraat 15, 1013 HK Amsterdam, Netherlands"
+  },
+  {
+    "name": "Good Beans Coffee",
+    "area": "haarlemmerbuurt",
+    "type": "coffee-matcha",
+    "id": "I64CC55B88AD7A779",
+    "query": "Good Beans Binnen Oranjestraat 4 Amsterdam",
+    "reason": "",
+    "apple_title": "Good Beans",
+    "apple_destination": "Good Beans, Binnen Oranjestraat 4H, 1013 JA Amsterdam, Netherlands"
+  },
+  {
+    "name": "Bocca Coffee",
+    "area": "canal-belt",
+    "type": "coffee-matcha",
+    "id": "I6DB4666EAA7CC852",
+    "query": "Bocca Coffee Kerkstraat 96 Amsterdam",
+    "reason": "",
+    "apple_title": "Bocca",
+    "apple_destination": "Bocca, Kerkstraat 96, 1017 GP Amsterdam, Netherlands"
+  },
+  {
+    "name": "Back to Black Weteringstraat",
+    "area": "canal-belt",
+    "type": "coffee-matcha",
+    "id": "IEE7021FD97046CFF",
+    "query": "Back to Black Weteringstraat 48 Amsterdam",
+    "reason": "",
+    "apple_title": "Back to Black",
+    "apple_destination": "Back to Black, Weteringstraat 48, 1017 SP Amsterdam, Netherlands"
+  },
+  {
+    "name": "Suki Matcha Club",
+    "area": "canal-belt",
+    "type": "coffee-matcha",
+    "id": "I34F01976ECE4FCD2",
+    "query": "Suki Matcha Nieuwe Spiegelstraat 49 Amsterdam",
+    "reason": "",
+    "apple_title": "Suki matcha club",
+    "apple_destination": "Suki matcha club, Nieuwe Spiegelstraat 49, 1017 DD Amsterdam, Netherlands"
+  },
+  {
+    "name": "Beste Döner at Dappermarkt",
+    "area": "oost",
+    "type": "street-food",
+    "id": "I2F435CBC6AD5D419",
+    "query": "Beste Doner Dapperstraat 4 Amsterdam",
+    "reason": "",
+    "apple_title": "Beste Döner",
+    "apple_destination": "Beste Döner, Dapperstraat 4, 1093 BT Amsterdam, Netherlands"
+  },
+  {
+    "name": "Tigris en Eufraat",
+    "area": "oost",
+    "type": "street-food",
+    "id": "I7E5695E9872494EB",
+    "query": "Tigris en Eufraat Javastraat 20H Amsterdam",
+    "reason": "",
+    "apple_title": "Tigris & Eufraat",
+    "apple_destination": "Tigris & Eufraat, Javastraat 20H, 1094 HH Amsterdam, Netherlands"
+  },
+  {
+    "name": "Toko Jai Mata",
+    "area": "oost",
+    "type": "street-food",
+    "id": "I82208DDFBF1AB054",
+    "query": "Toko Jai Mata Eerste van Swindenstraat 191 Amsterdam",
+    "reason": "",
+    "apple_title": "Toko Jai Mata",
+    "apple_destination": "Toko Jai Mata, 1e van Swindenstraat 191, 1093 GB Amsterdam, Netherlands"
+  },
+  {
+    "name": "Elevate Coffee Lab",
+    "area": "de-pijp",
+    "type": "coffee-matcha",
+    "id": "I73DAEE7719CE1658",
+    "query": "Elevate Coffee Lab Van der Helstplein 10H Amsterdam",
+    "reason": "",
+    "apple_title": "Elevate Coffee Lab",
+    "apple_destination": "Elevate Coffee Lab, Van der Helst Plein Oud-Zuid 10H, 1072 PH Amsterdam, Netherlands"
+  },
+  {
+    "name": "DAK Showroom",
+    "area": "oud-west",
+    "type": "coffee-matcha",
+    "id": "I7E72E3BBE7805788",
+    "query": "DAK Coffee Bellamyplein 16H Amsterdam",
+    "reason": "",
+    "apple_title": "Dak Showroom by Dak Coffee Roasters",
+    "apple_destination": "Dak Showroom by Dak Coffee Roasters, Bellamyplein 16H, 1053 AS Amsterdam, Netherlands"
+  },
+  {
+    "name": "a Sense of Place",
+    "area": "jordaan",
+    "type": "coffee-matcha",
+    "id": "I852FADD433DC744F",
+    "query": "a Sense of Place Willemsstraat 141 Amsterdam",
+    "reason": "",
+    "apple_title": "a sense of Place Amsterdam / ASOP Wines",
+    "apple_destination": "a sense of Place Amsterdam / ASOP Wines, Willemsstraat 141, 1015 JC Amsterdam, Netherlands"
+  },
+  {
+    "name": "Morning Owl Coffee",
+    "area": "centrum",
+    "type": "coffee-matcha",
+    "id": "ID9D66D421D2B9DBE",
+    "query": "Morning Owl Coffee Zeedijk 71 Amsterdam",
+    "reason": "",
+    "apple_title": "Morning Owl Coffee",
+    "apple_destination": "Morning Owl Coffee, Zeedijk 71, 1012 AS Amsterdam, Netherlands"
+  },
+  {
+    "name": "Rosèl",
+    "area": "centrum",
+    "type": "street-food",
+    "id": "I69C257D9F84E479D",
+    "query": "Rosel Spuistraat 214 Amsterdam",
+    "reason": "",
+    "apple_title": "Rosèl Sandwiches Amsterdam",
+    "apple_destination": "Rosèl Sandwiches Amsterdam, Spuistraat 214, 1012 VT Amsterdam, Netherlands"
+  },
+  {
+    "name": "ESH Pitabar",
+    "area": "museumkwartier",
+    "type": "restaurants",
+    "id": "I6DB244983C45E194",
+    "query": "ESH Pitabar Van Baerlestraat 51 Amsterdam",
+    "reason": "",
+    "apple_title": "Esh Pitaria & Bar",
+    "apple_destination": "Esh Pitaria & Bar, Moreelsestraat 1-3, 1071 BJ Amsterdam, Netherlands"
+  },
+  {
+    "name": "Beef Chief at Transit",
+    "area": "noord",
+    "type": "street-food",
+    "id": null,
+    "query": "Aambeeldstraat 38, 1021 KB Amsterdam",
+    "reason": "Apple Maps lists the former Beitelkade location, not the current Transit address."
+  },
+  {
+    "name": "Wagaya Japan Onigiri",
+    "area": "oost",
+    "type": "street-food",
+    "id": "IE10CE6124900270",
+    "query": "Wagaya Japan Onigiri Wibautstraat metro Amsterdam",
+    "reason": "",
+    "apple_title": "Wagaya Onigiri",
+    "apple_destination": "Wagaya Onigiri, Wibautstraat 112, 1091 GP Amsterdam, Netherlands"
+  },
+  {
+    "name": "De Hapjeshoek",
+    "area": "centrum",
+    "type": "street-food",
+    "id": "I1C37DAA20557B2CF",
+    "query": "De Hapjeshoek Waterlooplein metro Amsterdam",
+    "reason": "",
+    "apple_title": "De Hapjeshoek",
+    "apple_destination": "De Hapjeshoek, Metrostation Waterlooplein 6, 1011 MS Amsterdam, Netherlands"
+  },
+  {
+    "name": "Leeman Döner",
+    "area": "de-pijp",
+    "type": "street-food",
+    "id": "I2E379B108AF0B351",
+    "query": "Leeman Doner Van Woustraat 160 Amsterdam",
+    "reason": "",
+    "apple_title": "Bakkerij Leeman",
+    "apple_destination": "Bakkerij Leeman, Van Woustraat 160, 1073 LW Amsterdam, Netherlands"
+  },
+  {
+    "name": "Amsterdam Vintage Clothing",
+    "area": "jordaan",
+    "type": "clothes",
+    "id": "I6485DC017DF2193A",
+    "query": "Amsterdam Vintage Clothing Prinsengracht 226 Amsterdam",
+    "reason": "",
+    "apple_title": "AVC",
+    "apple_destination": "AVC, Prinsengracht 226, 1016 HD Amsterdam, Netherlands"
+  },
+  {
+    "name": "Mokum Vintage",
+    "area": "jordaan",
+    "type": "clothes",
+    "id": "I2E534FA400FE8D1B",
+    "query": "Mokum Vintage Rozengracht 25 Amsterdam",
+    "reason": "",
+    "apple_title": "Mokum Vintage",
+    "apple_destination": "Mokum Vintage, Rozengracht 25, 1016 LR Amsterdam, Netherlands"
+  },
+  {
+    "name": "Afura",
+    "area": "canal-belt",
+    "type": "clothes",
+    "id": "I32EE9CCC27B8EC47",
+    "query": "Afura Vijzelgracht 13 Amsterdam",
+    "reason": "",
+    "apple_title": "Afura",
+    "apple_destination": "Afura, Vijzelgracht 13, 1017 HM Amsterdam, Netherlands"
+  },
+  {
+    "name": "Maha Amsterdam",
+    "area": "canal-belt",
+    "type": "clothes",
+    "id": "I190E0B944D81698D",
+    "query": "Maha Amsterdam Vijzelstraat 129 Amsterdam",
+    "reason": "",
+    "apple_title": "Maha",
+    "apple_destination": "Maha, Vijzelstraat 129, 1017 HJ Amsterdam, Netherlands"
+  },
+  {
+    "name": "Pop Trading Company",
+    "area": "centrum",
+    "type": "clothes",
+    "id": "IEDEBA856DD8BBCA8",
+    "query": "Pop Trading Company Sint Annendwarsstraat 3a Amsterdam",
+    "reason": "",
+    "apple_title": "Pop Trading Company",
+    "apple_destination": "Pop Trading Company, Sint Annendwarsstraat 3A, 1012 HC Amsterdam, Netherlands"
+  },
+  {
+    "name": "Patta",
+    "area": "centrum",
+    "type": "clothes",
+    "id": "I3E8C5ED76CDAB365",
+    "query": "Patta Zeedijk 68 Amsterdam",
+    "reason": "",
+    "apple_title": "Patta",
+    "apple_destination": "Patta, Zeedijk 68-70, 1012 BA Amsterdam, Netherlands"
+  },
+  {
+    "name": "The New Originals",
+    "area": "centrum",
+    "type": "clothes",
+    "id": "I3527B77BED2FCDAD",
+    "query": "The New Originals Zeedijk 59 Amsterdam",
+    "reason": "",
+    "apple_title": "The New Originals",
+    "apple_destination": "The New Originals, Zeedijk 57, 1012 AS Amsterdam, Netherlands"
+  }
+]
