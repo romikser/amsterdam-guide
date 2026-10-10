@@ -362,5 +362,54 @@
     "alt": "Stalls and shoppers at Dappermarkt",
     "credit": "I amsterdam",
     "kind": "venue-site-embed"
+  },
+  "Amsterdam Vintage Clothing": {
+    "url": "https://amsterdamvintageclothing.com/cdn/shop/files/Store_picture.jpg?v=1687172500&width=1280",
+    "source": "https://amsterdamvintageclothing.com/pages/about-us-2",
+    "alt": "Amsterdam Vintage Clothing storefront",
+    "credit": "Amsterdam Vintage Clothing",
+    "kind": "venue-site-embed"
+  },
+  "Afura": {
+    "url": "https://afurastore.com/cdn/shop/files/97A53247-E3CE-4A3B-A8F8-5E48B9169D9C-3649-0000021AD691C322.jpg?v=1748938526&width=1051",
+    "source": "https://afurastore.com/pages/contact",
+    "alt": "Afura store interior with clothing racks and display shelving",
+    "credit": "Afura",
+    "kind": "venue-site-embed"
+  },
+  "Maha Amsterdam": {
+    "url": "https://www.maha-amsterdam.com/cdn/shop/files/IMG_2831-2.jpg?v=1765466476",
+    "source": "https://www.maha-amsterdam.com/pages/contact",
+    "alt": "Maha Amsterdam model wearing a black leather jacket",
+    "credit": "Maha Amsterdam",
+    "kind": "venue-site-embed"
+  },
+  "Pop Trading Company": {
+    "url": "https://poptradingcompany.com/cdn/shop/files/4_2.jpg?v=1758112115&width=1600",
+    "source": "https://poptradingcompany.com/pages/pop-shop",
+    "alt": "Pop Trading Company campaign with skaters on a subway car",
+    "credit": "Pop Trading Company",
+    "kind": "venue-site-embed"
+  },
+  "Patta": {
+    "url": "https://patta.nl/cdn/shop/files/PATTA-AMS-STORE_10.jpg?v=1739810240&width=1100",
+    "source": "https://patta.nl/pages/stores",
+    "alt": "Patta Amsterdam store on Zeedijk",
+    "credit": "Patta",
+    "kind": "venue-site-embed"
+  },
+  "The New Originals": {
+    "url": "https://www.theneworiginals.eu/cdn/shop/files/Wave_denim_jacket_front.png?v=1783506745&width=1600",
+    "source": "https://www.theneworiginals.eu/",
+    "alt": "The New Originals Wave denim jacket",
+    "credit": "The New Originals",
+    "kind": "venue-site-embed"
+  },
+  "Mokum Vintage": {
+    "url": "https://mokumvintage.com/cdn/shop/files/000035460022_214119aa-bab5-4591-81dd-0d2e046fd157.jpg?v=1774175603&width=1500",
+    "source": "https://mokumvintage.com/",
+    "alt": "Mokum Vintage shop interior with clothing and skateboard displays",
+    "credit": "Mokum Vintage",
+    "kind": "venue-site-embed"
   }
 }
