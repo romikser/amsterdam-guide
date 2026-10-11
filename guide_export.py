@@ -10,6 +10,11 @@ from pathlib import Path
 ROOT=Path(__file__).parent
 PLACES=json.loads((ROOT/'apple-maps-places.json').read_text())
 LOOKUP={p['name']:p for p in PLACES}
+GOOGLE_QUERIES={
+    'Upstream — Leegte / Rozendaal':'upstream Gallery Kloveniersburgwal 95 Amsterdam',
+    'Beef Chief at Transit':'Beef Chief // Transit Bar Aambeeldstraat 38 Amsterdam',
+    'Middle East Archive × Foam':'Mercatorplein Amsterdam',
+}
 
 
 def varint(value):
@@ -59,8 +64,8 @@ def export(scope,slug,title,rows,prefix=''):
             poi=LOOKUP[n]
             # Exact address where checked; otherwise the public search query.
             # My Maps geocodes on import: this is not a verified Google POI ID.
-            location=poi.get('apple_destination') or query
-            note=('Review the location manually: '+poi['reason'] if not poi['id'] else '')
+            location=GOOGLE_QUERIES.get(n) or poi.get('apple_destination') or query
+            note=('Outdoor exhibition: this pin is the square, not the artwork. Check on arrival.' if n=='Middle East Archive × Foam' else '')
             writer.writerow([n,location,area,typ,site,note])
     url=guide_url('Amsterdam · '+title,[p['id'] for p in mapped])
     esc=lambda text:html.escape(str(text),quote=True)
@@ -68,5 +73,6 @@ def export(scope,slug,title,rows,prefix=''):
     if missing:
         details=''.join(f'<li><strong>{esc(p["name"])}</strong> — {esc(p["reason"])} <a href="{esc("https://maps.apple.com/?q="+urllib.parse.quote(p["query"]))}" target="_blank" rel="noopener">Search manually ↗</a></li>' for p in missing)
         h+=f'<details class="export-caveat"><summary>{len(missing)} of {len(rows)} stops have no verified Apple Maps pin; they remain in the complete CSV</summary><ul>{details}</ul></details>'
-        h+=f'<details class="export-caveat"><summary>{len(missing)} Google My Maps location{"s" if len(missing)!=1 else ""} need checking after import</summary><p>Search text rather than a verified venue pin: {", ".join(esc(p["name"]) for p in missing)}. Review these on the imported map.</p></details>'
+    if 'Middle East Archive × Foam' in names:
+        h+='<details class="export-caveat"><summary>One Google map pin is the square, not the exhibition</summary><p>Middle East Archive × Foam is outdoors at Mercatorplein without a distinct place pin. Check the square on arrival.</p></details>'
     return h+'</div>'

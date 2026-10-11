@@ -1,7 +1,7 @@
 from pathlib import Path
 import html, json, re, urllib.parse
 from data import AREAS,AREA_SOURCES,TYPES,PLACES
-from guide_export import export
+from guide_export import export,LOOKUP,GOOGLE_QUERIES
 from events_data import EVENTS
 from background_data import CITY_BACKGROUND,CITY_SOURCES,AREA_BACKGROUND
 try:
@@ -20,6 +20,9 @@ def pic(key,prefix=''):
 def remote_pic(info):
  return f'<div class="card-photo"><img loading="lazy" referrerpolicy="no-referrer" src="{H(info["url"])}" alt="{H(info["alt"])}"><span class="photo-badge">Venue photo</span></div>'
 def linkmap(q):return 'https://maps.apple.com/?q='+urllib.parse.quote(q)
+def linkgoogle(name,q):
+ location=GOOGLE_QUERIES.get(name) or LOOKUP[name].get('apple_destination') or q
+ return 'https://www.google.com/maps/search/?api=1&query='+urllib.parse.quote(location)
 def path(link,prefix):return prefix+link
 
 def shell(title,body,prefix='',active=''):
@@ -38,7 +41,8 @@ def card(row,prefix=''):
  photo_note=(f'<p>Photograph: <a href="{H(credits[photo_key]["page"])}">Wikimedia Commons</a> ({H(credits[photo_key]["license"])}); cropped for display.</p>' if photo_key else (f'<p>Image from <a href="{H(remote["source"])}" target="_blank" rel="noopener">{H(remote["credit"])} ↗</a>; displayed from the credited source, not copied here.</p>' if remote else ''))
  source_links=''.join(f'<li><a href="{H(url)}" target="_blank" rel="noopener">{H(label)}</a></li>' for label,url in DISCOVERY_SOURCES.get(name,[]))
  sources=f'<p>Discovery & evidence:</p><ul>{source_links}</ul>' if source_links else ''
- return f'<article class="card{"" if (photo_key or remote) else " no-photo"}">{media}<div class="card-body"><div class="card-meta"><a href="{prefix}neighbourhoods/{area}.html">{H(AREAS[area][0])}</a> / <a href="{prefix}types/{typ}.html">{H(TYPES[typ])}</a></div><h3>{H(name)}</h3><p>{H(summary)}</p><div class="card-links"><a href="{H(linkmap(query))}" target="_blank" rel="noopener">Apple Maps ↗</a><a href="{H(site)}" target="_blank" rel="noopener">Official / source ↗</a></div><details><summary>Hours, bookings & sources</summary><p>{H(detail)}</p>{sources}{photo_note}</details></div></article>'
+ google_label='Google Maps · square ↗' if name=='Middle East Archive × Foam' else 'Google Maps ↗'
+ return f'<article class="card{"" if (photo_key or remote) else " no-photo"}">{media}<div class="card-body"><div class="card-meta"><a href="{prefix}neighbourhoods/{area}.html">{H(AREAS[area][0])}</a> / <a href="{prefix}types/{typ}.html">{H(TYPES[typ])}</a></div><h3>{H(name)}</h3><p>{H(summary)}</p><div class="card-links"><a href="{H(linkmap(query))}" target="_blank" rel="noopener">Apple Maps ↗</a><a href="{H(linkgoogle(name,query))}" target="_blank" rel="noopener">{google_label}</a><a href="{H(site)}" target="_blank" rel="noopener">Official / source ↗</a></div><details><summary>Hours, bookings & sources</summary><p>{H(detail)}</p>{sources}{photo_note}</details></div></article>'
 
 def event_card(item):
  image=item.get('image')

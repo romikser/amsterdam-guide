@@ -1,7 +1,7 @@
 Name,Location,Neighbourhood,Category,Official URL,Location note
 TORCH Gallery,"Torch Gallery, Lauriergracht 94, 1016 RN Amsterdam, Netherlands",jordaan,art,https://torchgallery.com/contact,
 Ron Mandos — Zanele Muholi,"Galerie Ron Mandos, Prinsengracht 282, 1016 HJ Amsterdam, Netherlands",jordaan,art,https://ronmandos.nl/exhibition/zanele-muholi-faces-and-phases/,
-Upstream — Leegte / Rozendaal,"Kloveniersburgwal 95, 1011 KB Amsterdam",centrum,art,https://www.upstreamgallery.nl/exhibitions,Review the location manually: Apple Maps lists an old address; no verified current gallery pin.
+Upstream — Leegte / Rozendaal,upstream Gallery Kloveniersburgwal 95 Amsterdam,centrum,art,https://www.upstreamgallery.nl/exhibitions,
 Huis Marseille,"Huis Marseille Museum voor Fotografie, Keizersgracht 401, 1016 EK Amsterdam, Netherlands",canal-belt,art,https://huismarseille.nl/en/exhibitions/martine-gutierrez/,
 Foam — Hailun Ma / Kander,"Foam, Keizersgracht 609, 1017 DS Amsterdam, Netherlands",canal-belt,art,https://www.foam.org/programme,
 GRIMM — Charles Avery,"GRIMM, Leidsegracht 38-40, 1016 CM Amsterdam, Netherlands",canal-belt,art,https://grimmgallery.com/exhibitions/378-charles-avery-where-rocco-found-a-dead-monster-or-the/,
@@ -9,4 +9,4 @@ STRAAT,"STRAAT Museum, Ndsm-Plein 1, 1033 WC Amsterdam, Netherlands",noord,art,h
 Stedelijk,"Stedelijk Museum, Museumplein 10, 1071 DJ Amsterdam, Nederland",museumkwartier,art,https://www.stedelijk.nl/en/exhibitions/yayoi-kusama-en,
 Rijksmuseum,"Rijksmuseum, Museumstraat 1, 1071 XX Amsterdam, Netherlands",museumkwartier,art,https://www.rijksmuseum.nl/en/visit-the-rijksmuseum,
 Van Gogh Museum,"Van Gogh Museum, Museumplein 6, 1071 DJ Amsterdam, Netherlands",museumkwartier,art,https://www.vangoghmuseum.nl/en/visit/tickets-and-ticket-prices,
-Middle East Archive × Foam,Foam Middle East Archive Mercatorplein Amsterdam,de-baarsjes,art,https://www.foam.org/events/middle-east-archive,Review the location manually: No distinct Apple Maps pin for the temporary Mercatorplein exhibition.
+Middle East Archive × Foam,Mercatorplein Amsterdam,de-baarsjes,art,https://www.foam.org/events/middle-east-archive,"Outdoor exhibition: this pin is the square, not the artwork. Check on arrival."
