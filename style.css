@@ -27,3 +27,5 @@
 .hero .export-box p{margin:10px 0 0;font-size:11px;line-height:1.55;color:#555}
 .export-caveat{margin-top:12px;font-size:11px}.export-caveat summary{cursor:pointer;text-decoration:underline;text-underline-offset:2px}.export-caveat ul{margin:8px 0 0;padding-left:18px}.export-caveat li{margin:5px 0}
 @media(max-width:620px){.export-actions{flex-direction:column}.export-button{width:100%}}
+/* Four destinations stay readable and tappable on a phone. */
+@media(max-width:620px){.navlinks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.navlinks a{min-height:42px;display:flex;align-items:center;justify-content:center;text-align:center;border-bottom:1px solid #eee;font-size:11px}}
