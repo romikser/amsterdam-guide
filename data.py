@@ -13,10 +13,10 @@ AREAS = {
 }
 AREA_SOURCES = {
  'de-pijp':'https://www.iamsterdam.com/en/explore/neighbourhoods/de-pijp/then-and-now',
- 'oud-west':'https://iamsterdam.com/en/explore/neighbourhoods/oud-west/then-and-now',
+ 'oud-west':'https://www.iamsterdam.com/en/explore/neighbourhoods/oud-west/then-and-now',
  'jordaan':'https://www.iamsterdam.com/en/explore/neighbourhoods/centrum/things-to-do-in-the-jordaan',
- 'nine-streets':'https://iamsterdam.com/en/see-and-do/shopping-and-markets/shopping-areas-in-amsterdam',
- 'centrum':'https://iamsterdam.com/en/see-and-do/attractions-and-sights/amsterdam-beneath-your-feet',
+ 'nine-streets':'https://www.iamsterdam.com/en/explore/neighbourhoods/centrum/things-to-do-in-the-negen-straatjes-nine-streets',
+ 'centrum':'https://www.iamsterdam.com/en/explore/neighbourhoods/centrum/things-to-do',
  'haarlemmerbuurt':'https://www.stayokay.com/en/tips/lovely-haarlemmerbuurt',
  'canal-belt':'https://www.iamsterdam.com/en/whats-on/calendar/museums-and-galleries/museums/museum-of-the-canals',
  'oost':'https://www.iamsterdam.com/en/explore/neighbourhoods/oost/then-and-now',

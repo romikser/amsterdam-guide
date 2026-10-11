@@ -1,0 +1,57 @@
+"""Researched public city and neighbourhood context for the Amsterdam directory."""
+CITY_BACKGROUND = (
+    "Amsterdam did not begin as a ring of postcard canals. Its first settlement took shape on wet land beside the Amstel, where a dam and river crossing became a place to trade. The medieval centre around Dam Square still has a different grain from the later city: tighter lanes, older institutions and a street plan that makes more sense on foot than from a tram window. The city archives trace the settlement’s early identity through its thirteenth-century toll privilege, not a single neat founding day.",
+    "The great canal expansion began in the seventeenth century as a planned answer to growth: waterways, plots, housing, warehouses and commerce were laid out together. The elegant merchant houses are only one part of that story. Amsterdam’s wealth was also tied to colonial trade and slavery, and the beauty of the canal belt should not erase who paid for it. Today those same streets contain photography museums, galleries, design shops and lived-in homes; they are not an outdoor museum.",
+    "Beyond the ring, nineteenth-century housing and industry shaped De Pijp and Oost; later planned streets shaped the western districts. Across the IJ, former shipbuilding land in Noord has become a patchwork of culture, clubs and everyday neighbourhoods. That is why this guide is arranged by area and interest rather than one route through the centre: a market morning, record-digging afternoon or gallery visit makes more sense when you understand which part of the city you are in.",
+)
+CITY_SOURCES = (
+    ('City Archives · the medieval dam','https://www.amsterdam.nl/stadsarchief/canon/windows/2/'),
+    ('City Archives · the 1613 canal plan','https://www.amsterdam.nl/stadsarchief/canon/windows/12'),
+    ('City of Amsterdam · slavery and prosperity','https://www.amsterdam.nl/en/leisure/nationaal-slavernijmuseum/history-slavery'),
+)
+AREA_BACKGROUND = {
+ 'de-pijp': (
+    "De Pijp grew quickly south of the old city as nineteenth-century Amsterdam needed housing for workers. Its comparatively narrow streets and dense blocks feel different from the deliberate grandeur of the canal ring. That compactness is part of the appeal: in a short walk you move between small cafés, food counters, independent shops and ordinary residential streets, rather than hopping from landmark to landmark.",
+    "Albert Cuypmarkt is the lively spine, good for a browse and a stroopwafel but not a reason to treat every stall as a recommendation. For a quieter contrast, step toward Sarphatipark and the side streets around Gerard Doustraat. The area has enough serious coffee and matcha, record digging at Record Mania and casual food on and around Van Woustraat to fill a relaxed half-day without needing a fixed circuit.",
+ ),
+ 'oud-west': (
+    "Oud-West sits between the old centre and Vondelpark, but it has its own history of working streets, housing struggles and squatted spaces. The former tram depot De Hallen is an obvious landmark of reuse: cinemas and cultural spaces sit alongside Foodhallen. That conversion is interesting, although the food hall itself is not the whole neighbourhood—and is often its busiest, least local-feeling stop.",
+    "Ten Katemarkt and the streets around Kinkerstraat are better for seeing daily life and browsing without a reservation. This guide’s coffee shops, independent pizza and wine stops spread out along those streets rather than clustering in De Hallen. Take a detour through smaller residential blocks, then choose one market, café or meal; the district rewards lingering more than a checklist.",
+ ),
+ 'jordaan': (
+    "The Jordaan was developed for workers and newcomers during the city’s seventeenth-century expansion; it was not built as a picturesque enclave. Its tightly packed streets later changed substantially as housing improved and rents rose. You can still see the contrast between quieter residential lanes, market activity and the polished galleries and boutiques that now occupy some of the canal-side addresses.",
+    "Start with Westerstraat or Noordermarkt if you want street life, then wander toward the smaller bridges and side streets rather than following the busiest photo route. Distortion Records, designer archives and independent bakeries make this a strong browsing area; Galerie Ron Mandos and TORCH add a more focused contemporary-art reason to come. The southern canal edge is a different mood from the market end, so do not try to compress both into a five-minute stop.",
+ ),
+ 'nine-streets': (
+    "The Nine Streets are nine short cross streets laid out within the seventeenth-century canal district, connecting the bigger waterways with a finer-grained shopping grid. The appeal is not one monument: it is the quick change from a small shopfront to a broad canal view, and the unusually dense mix of independent retail within a few blocks. It is also popular, so the narrow pavements can feel crowded at peak hours.",
+    "For this guide, the point is a compact browse rather than a shopping marathon. Look in at Waxwell for records, take a coffee break around Runstraat or Berenstraat, and use the canal bridges to orient yourself. When the streets grow busy, keep walking into the wider canal belt or the Jordaan rather than queuing simply because a storefront is famous.",
+ ),
+ 'centrum': (
+    "The old centre developed around the Amstel dam and the port-facing streets before the great canal expansion. It holds some of Amsterdam’s oldest urban fabric, but also its heaviest tourist traffic and major transport interchange. Dam Square and the medieval core give context; the more rewarding part of this guide is what happens when you step away from the main shopping stream into smaller streets with very different histories.",
+    "Spuistraat concentrates independent design and record stops such as Concrete, X BANK and Rush Hour. Farther east, Zeedijk has Amsterdam-rooted streetwear from Patta and The New Originals, while nearby lanes offer food beyond the obvious souvenir strip. Treat these as a set of distinct pockets, not a single ‘city-centre’ shopping mall; cross the busy axes and give yourself time to notice the transitions.",
+ ),
+ 'haarlemmerbuurt': (
+    "Haarlemmerstraat and Haarlemmerdijk follow an old westward route out of Amsterdam toward Haarlem. Warehouses, trade and working streets helped shape this end of the centre; the long line of smaller shopfronts still feels more useful for an unhurried browse than the main retail streets around Dam Square. The neighbourhood also links the canal ring with the IJ-side approaches, so it makes sense as a walk rather than a destination for one building.",
+    "This is a deliberately light section of the directory: TOKI and Good Beans make good coffee anchors, with other independent shops to discover without pretending each one has been vetted here. Walk the full length of the street, pay attention to side lanes and entrances, and stop where something genuinely catches your eye. It is a useful neighbourhood to leave flexible instead of booking every hour.",
+ ),
+ 'canal-belt': (
+    "The canal belt was a major planned expansion beginning in the seventeenth century, with waterways and plots laid out for housing, trade and storage as Amsterdam grew. Its formal façades can make it feel uniformly grand, but the streets still carry traces of work, commerce and unequal wealth as well as architecture. Canal houses have since become homes, museums and galleries; this is an active part of the city, not simply scenery viewed from a boat.",
+    "Huis Marseille and Foam put photography into very different historic buildings, while GRIMM offers a smaller contemporary-art stop. Concerto’s connected record shops on Utrechtsestraat and design browsing around the southern canals give another reason to cross the area on foot. These places are spread across the ring, so choose one or two and let the walk between them reveal the scale of the canals instead of trying to clear every card in a day.",
+ ),
+ 'oost': (
+    "Oost expanded as Amsterdam grew beyond the old ring, with nineteenth-century housing, industry and later migration shaping neighbourhoods that are less polished and more varied than the canal-centre stereotype. The Dapperbuurt and Indische Buurt are distinct places within that larger east-side area; do not assume every stop here sits on the same market street. Dappermarkt is a working market, not a themed food hall.",
+    "Browse the market for provisions, then follow the streets toward Javastraat for shops and casual food shaped by different communities. Farther east, Park Frankendael and the greenhouse restaurant De Kas offer a much greener, slower contrast; that is a separate leg of the outing, not a short hop from every Dappermarkt stall. Oost makes sense when you want street life and an everyday neighbourhood rhythm as much as an individual reservation.",
+ ),
+ 'noord': (
+    "Crossing the IJ by ferry is a real geographical break from the old centre. Noord includes ordinary residential districts as well as former industrial land, and its headline venues are not all neighbours. At NDSM, the shipyard’s closure left enormous halls that later drew artists and cultural projects; STRAAT uses that scale for street art that would not fit a conventional gallery room.",
+    "Garage Noord and nearby food stops are over in Hamerkwartier, a different part of Noord from NDSM. Plan the correct ferry and onward route rather than treating STRAAT and a club night as a short walk apart. This area is most rewarding when you pick a purpose—large-scale art by day or an actual lineup at night—and leave time for the waterfront and the less staged streets around it.",
+ ),
+ 'museumkwartier': (
+    "Museumkwartier was shaped by Amsterdam’s nineteenth-century ambition to build major cultural institutions and formal urban spaces beyond the old centre. The Rijksmuseum, Van Gogh Museum, Stedelijk and Concertgebouw frame the district, but they offer very different experiences. The open space around Museumplein also makes the area feel less compressed than the canal streets just to the north.",
+    "For this guide, the Stedelijk is the contemporary-art priority; pick Rijksmuseum or Van Gogh only if their collections genuinely call to you, rather than attempting all three in one day. The streets around Van Baerlestraat add fashion browsing, including FOUR, to the museum circuit. Book any timed exhibition separately and leave room to look carefully rather than counting buildings visited.",
+ ),
+ 'de-baarsjes': (
+    "De Baarsjes grew in the twentieth century as Amsterdam expanded westward, and its architecture is the strongest first reason to pay attention. Around Mercatorplein, Berlage’s planned square and the district’s Amsterdam School details give a different sense of scale and decoration from the older canals. Much of the pleasure is in ordinary streets and façades rather than a single famous attraction.",
+    "Jan Evertsenstraat provides a useful local axis for coffee and shops; White Label West is the verified coffee stop in this directory. A temporary Foam-linked photography project adds a date-specific reason to look around Mercatorplein, but confirm its exact location and access before going. This is a gentle detour for architecture and neighbourhood atmosphere, not a place to force into a busy day just to complete a map.",
+ ),
+}

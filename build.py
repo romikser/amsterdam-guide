@@ -3,6 +3,7 @@ import html, json, re, urllib.parse
 from data import AREAS,AREA_SOURCES,TYPES,PLACES
 from guide_export import export
 from events_data import EVENTS
+from background_data import CITY_BACKGROUND,CITY_SOURCES,AREA_BACKGROUND
 try:
  from data import DISCOVERY_SOURCES
 except ImportError:
@@ -45,6 +46,11 @@ def event_card(item):
  credit=(f'<p>Image: <a href="{H(item["url"])}" target="_blank" rel="noopener">{H(item["credit"])} ↗</a>; displayed from the credited source, not copied here.</p>' if image else '')
  return f'<article class="card event-card{"" if image else " no-photo"}">{media}<div class="card-body"><div class="card-meta">{H(item["date"])} / {H(item["kind"])}</div><h3>{H(item["title"])}</h3><p>{H(item["summary"])}</p><div class="card-links"><a href="{H(item["url"])}" target="_blank" rel="noopener">Official event ↗</a></div><details><summary>Timing, caveats & source</summary><p>{H(item["detail"])}</p>{credit}</details></div></article>'
 
+def context_block(title,paragraphs,sources):
+ paragraphs_html=''.join(f'<p>{H(paragraph)}</p>' for paragraph in paragraphs)
+ source_html=' · '.join(f'<a href="{H(url)}" target="_blank" rel="noopener">{H(label)} ↗</a>' for label,url in sources)
+ return f'<section class="context-block columns-{len(paragraphs)}" aria-label="Background"><div class="eyebrow">Where you are</div><h2>{H(title)}</h2><div class="context-copy">{paragraphs_html}</div><div class="context-sources">Background sources: {source_html}</div></section>'
+
 def write(rel,content):
  p=ROOT/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(content,encoding='utf-8')
 area_tile_blurbs={'de-pijp':'Worker-built streets, the market, coffee and small record shops.','oud-west':'Ten Katemarkt, converted halls and independent cafés.','jordaan':'Working-class canals, galleries and second-hand records.','nine-streets':'Seventeenth-century canal crossings and independent browsing.','centrum':'The medieval core, with better shops off the busiest strip.','haarlemmerbuurt':'A historic westward route of cafés and independent shopfronts.','canal-belt':'Planned canals, photography museums and deep record digging.','oost':'Dappermarkt, Javastraat and a slower green edge.','noord':'A ferry, a reclaimed shipyard and large-scale street art.','museumkwartier':'Rijks, Van Gogh and Stedelijk in one museum district.','de-baarsjes':'Amsterdam School brickwork and a quieter coffee detour.'}
@@ -52,8 +58,8 @@ area_tiles=''.join(tile(v[0],area_tile_blurbs[k],v[2],f'neighbourhoods/{k}.html'
 type_images={'coffee-matcha':'de-pijp','street-food':'market','restaurants':'oost','vinyl':'centrum','clothes':'nine-streets','art':'museumkwartier','bars-music':'noord','markets':'oud-west'}
 type_blurbs={'coffee-matcha':'Tea-forward stops and properly made coffee.','street-food':'Roti rolls, onigiri, sandwiches, burgers and market bites.','restaurants':'Worth arranging a table—or leaving flexible.','vinyl':'Jazz, soul, city-pop luck and electronic records.','clothes':'Independent stores, sharp labels and Dutch design.','art':'Photography and contemporary work first; the classics remain optional.','bars-music':'Cocktails, wine and dates that actually overlap.','markets':'Working streets and the pleasure of an unscheduled walk.'}
 type_tiles=''.join(tile(name,type_blurbs[k],type_images[k],f'types/{k}.html') for k,name in TYPES.items())
-hero='<section class="hero"><div class="eyebrow">Pocket directory / Amsterdam</div><h1>Amsterdam<span style="color:#087549">.</span></h1><p>Amsterdam began around a medieval dam on the Amstel, expanded into a planned 17th-century canal ring, then grew through workers’ districts and across the IJ to an old shipyard now full of art. Those layers are close enough to explore on foot, by bike or ferry, but they feel like different cities. Follow the markets, coffee, records and galleries rather than treating the centre as the whole story.</p>'+export('all','amsterdam','All stops',PLACES)+'</section>'
-home=hero+'<section class="section"><div class="section-head"><h2>In the city</h2><a href="events.html">All events →</a></div><p class="intro">A short edit of music, print, photography and city-wide dates—not every listing in town.</p><div class="cards">'+''.join(event_card(EVENTS[i]) for i in (0,6,9))+'</div></section><section class="section"><div class="section-head"><h2>Neighbourhoods</h2><a href="neighbourhoods/index.html">See all →</a></div><div class="tiles">'+area_tiles+'</div></section><section class="section"><div class="section-head"><h2>Place types</h2><a href="types/index.html">See all →</a></div><div class="tiles">'+type_tiles+'</div></section>'
+hero='<section class="hero"><div class="eyebrow">Pocket directory / Amsterdam</div><h1>Amsterdam<span style="color:#087549">.</span></h1><p>An old river port, planned canals, worker-built streets and a former shipyard across the IJ: Amsterdam changes character block by block. Start with the city’s layers below, then browse by neighbourhood or by what you want to do.</p>'+export('all','amsterdam','All stops',PLACES)+'</section>'
+home=hero+context_block('How the city grew',CITY_BACKGROUND,CITY_SOURCES)+'<section class="section"><div class="section-head"><h2>In the city</h2><a href="events.html">All events →</a></div><p class="intro">A short edit of music, print, photography and city-wide dates—not every listing in town.</p><div class="cards">'+''.join(event_card(EVENTS[i]) for i in (0,6,9))+'</div></section><section class="section"><div class="section-head"><h2>Neighbourhoods</h2><a href="neighbourhoods/index.html">See all →</a></div><div class="tiles">'+area_tiles+'</div></section><section class="section"><div class="section-head"><h2>Place types</h2><a href="types/index.html">See all →</a></div><div class="tiles">'+type_tiles+'</div></section>'
 sections=[]
 for slug,label,intro in [('music','Concerts & parties','Choose for the lineup and the energy you will actually have.'),('city','Festivals & city dates','Two worthwhile public events, not a generic festival calendar.'),('art','Exhibitions on now','Photography and music history worth a timed visit.')]:
  rows=[event for event in EVENTS if event['group']==slug]
@@ -73,11 +79,12 @@ for slug,(name,blurb,img) in AREAS.items():
  area_photo=credits[img]
  area_figure=f'<figure class="area-photo"><img loading="eager" src="../{H(area_photo["local"])}" alt="{H(area_photo.get("description") or area_photo["title"].removeprefix("File:"))}"><figcaption>Area photograph, not a venue recommendation · <a href="{H(area_photo["page"])}" target="_blank" rel="noopener">Photo source ↗</a></figcaption></figure>'
  area_export=export('neighbourhoods',slug,name,rows,'../')
- head=f'<section class="hero"><div class="eyebrow"><a href="index.html">← All neighbourhoods</a> / {len(rows)} stops</div><h1{hcls}>{H(name)}.</h1><p>{H(blurb)}</p>{area_export}<a class="area-source" href="{H(AREA_SOURCES[slug])}" target="_blank" rel="noopener">Neighbourhood background ↗</a>{area_figure}</section>'
+ head=f'<section class="hero"><div class="eyebrow"><a href="index.html">← All neighbourhoods</a> / {len(rows)} stops</div><h1{hcls}>{H(name)}.</h1><p>{H(blurb)}</p>{area_export}{area_figure}</section>'
+ area_context=context_block('The neighbourhood',AREA_BACKGROUND[slug],[('Area research',AREA_SOURCES[slug])])
  sub='<div class="subnav" aria-label="Place types in this area">'+''.join(f'<a href="#{k}">{H(label)}</a>' for k,label in TYPES.items() if any(r[2]==k for r in rows))+'</div>'
  if slug=='noord':sub+='<p class="note">NDSM/STRAAT and Garage Noord are in different parts of Noord. Do not plan them as a short walk between neighbouring venues.</p>'
  if slug=='de-pijp':sub+='<p class="note">On marathon Sunday, markets are shut and several bordering roads are affected. Keep the day flexible; use the organiser’s route and live GVB planner.</p>'
- write(f'neighbourhoods/{slug}.html',shell(name,head+sub+sections,'../','neighbourhoods/index.html'))
+ write(f'neighbourhoods/{slug}.html',shell(name,head+area_context+sub+sections,'../','neighbourhoods/index.html'))
 for slug,name in TYPES.items():
  rows=[r for r in PLACES if r[2]==slug]
  sections=''
