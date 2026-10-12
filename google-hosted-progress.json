@@ -1,0 +1,142 @@
+{
+  "neighbourhoods/haarlemmerbuurt": {
+    "mapId": "1no8IN2RmQ2YdLMghsff4wUen60YphRg",
+    "url": "https://www.google.com/maps/d/viewer?mid=1no8IN2RmQ2YdLMghsff4wUen60YphRg",
+    "title": "Amsterdam · Haarlemmerbuurt",
+    "count": 2,
+    "verifiedPublic": true
+  },
+  "neighbourhoods/de-baarsjes": {
+    "mapId": "1QlipDvCmmtKhwKY_IZVlaQycvvIsOYE",
+    "url": "https://www.google.com/maps/d/viewer?mid=1QlipDvCmmtKhwKY_IZVlaQycvvIsOYE",
+    "title": "Amsterdam · De Baarsjes",
+    "count": 2,
+    "verifiedPublic": true
+  },
+  "all/amsterdam": {
+    "mapId": "1GHlu1C-JkjOXCTRD5kZyVpZ9FYapm3M",
+    "url": "https://www.google.com/maps/d/viewer?mid=1GHlu1C-JkjOXCTRD5kZyVpZ9FYapm3M",
+    "title": "Amsterdam · All stops",
+    "count": 85,
+    "verifiedPublic": true
+  },
+  "neighbourhoods/de-pijp": {
+    "mapId": "1nTDp3e6k0O0xoN9XkqaXCvMm32L916A",
+    "url": "https://www.google.com/maps/d/viewer?mid=1nTDp3e6k0O0xoN9XkqaXCvMm32L916A",
+    "title": "Amsterdam · De Pijp",
+    "count": 17,
+    "verifiedPublic": true
+  },
+  "neighbourhoods/oud-west": {
+    "mapId": "1NM8ZUR4xUyTPpgczfTw-EB_A0eLSp28",
+    "url": "https://www.google.com/maps/d/viewer?mid=1NM8ZUR4xUyTPpgczfTw-EB_A0eLSp28",
+    "title": "Amsterdam · Oud-West",
+    "count": 10,
+    "verifiedPublic": true
+  },
+  "neighbourhoods/jordaan": {
+    "mapId": "1JzuYbh5veY6_OtGv5qO_bYyiPG9Vgag",
+    "url": "https://www.google.com/maps/d/viewer?mid=1JzuYbh5veY6_OtGv5qO_bYyiPG9Vgag",
+    "title": "Amsterdam · Jordaan",
+    "count": 11,
+    "verifiedPublic": true
+  },
+  "neighbourhoods/nine-streets": {
+    "mapId": "1gDqCR3SNxH1c9GChyzC0EtLjHkbzpSg",
+    "url": "https://www.google.com/maps/d/viewer?mid=1gDqCR3SNxH1c9GChyzC0EtLjHkbzpSg",
+    "title": "Amsterdam · Nine Streets",
+    "count": 3,
+    "verifiedPublic": true
+  },
+  "neighbourhoods/centrum": {
+    "mapId": "14sCpLs7P9TGYjtnjitGVraOhsB60k0E",
+    "url": "https://www.google.com/maps/d/viewer?mid=14sCpLs7P9TGYjtnjitGVraOhsB60k0E",
+    "title": "Amsterdam · Old Centre & Spuistraat",
+    "count": 14,
+    "verifiedPublic": true
+  },
+  "neighbourhoods/canal-belt": {
+    "mapId": "1zWjBVTs1lYloudsDv4JVYE1VcjbY2Qk",
+    "url": "https://www.google.com/maps/d/viewer?mid=1zWjBVTs1lYloudsDv4JVYE1VcjbY2Qk",
+    "title": "Amsterdam · Canal Belt",
+    "count": 10,
+    "verifiedPublic": true
+  },
+  "neighbourhoods/oost": {
+    "mapId": "1M_OiURkNS6QS-1FozvfiRqW8DWKQmXM",
+    "url": "https://www.google.com/maps/d/viewer?mid=1M_OiURkNS6QS-1FozvfiRqW8DWKQmXM",
+    "title": "Amsterdam · Oost",
+    "count": 8,
+    "verifiedPublic": true
+  },
+  "neighbourhoods/noord": {
+    "mapId": "1pMcw-AK2GHT2yjqUFSP5-cOLosVbmgQ",
+    "url": "https://www.google.com/maps/d/viewer?mid=1pMcw-AK2GHT2yjqUFSP5-cOLosVbmgQ",
+    "title": "Amsterdam · Noord / NDSM",
+    "count": 3,
+    "verifiedPublic": true
+  },
+  "neighbourhoods/museumkwartier": {
+    "mapId": "1yATVGdtcXTa5cekBOOv3mfSFgFeIgv4",
+    "url": "https://www.google.com/maps/d/viewer?mid=1yATVGdtcXTa5cekBOOv3mfSFgFeIgv4",
+    "title": "Amsterdam · Museumkwartier",
+    "count": 5,
+    "verifiedPublic": true
+  },
+  "types/coffee-matcha": {
+    "mapId": "1eHGyMQKXASTf-QY15KhrI0PsD_Pn_sU",
+    "url": "https://www.google.com/maps/d/viewer?mid=1eHGyMQKXASTf-QY15KhrI0PsD_Pn_sU",
+    "title": "Amsterdam · Coffee & Matcha",
+    "count": 25,
+    "verifiedPublic": true
+  },
+  "types/street-food": {
+    "mapId": "1QeJXG1E-_9xfj-gtJDJFlfPIBlJOM1Q",
+    "url": "https://www.google.com/maps/d/viewer?mid=1QeJXG1E-_9xfj-gtJDJFlfPIBlJOM1Q",
+    "title": "Amsterdam · Street Food",
+    "count": 17,
+    "verifiedPublic": true
+  },
+  "types/restaurants": {
+    "mapId": "1JVxdrIj3FwnCdkksSRz5UGMp_tDrU7A",
+    "url": "https://www.google.com/maps/d/viewer?mid=1JVxdrIj3FwnCdkksSRz5UGMp_tDrU7A",
+    "title": "Amsterdam · Restaurants",
+    "count": 7,
+    "verifiedPublic": true
+  },
+  "types/vinyl": {
+    "mapId": "1T153QMHeGM3b7vovMAUvkduxxCMOl9M",
+    "url": "https://www.google.com/maps/d/viewer?mid=1T153QMHeGM3b7vovMAUvkduxxCMOl9M",
+    "title": "Amsterdam · Vinyl",
+    "count": 6,
+    "verifiedPublic": true
+  },
+  "types/clothes": {
+    "mapId": "1quCvltNflQL2RYt-FwBXX0Sr3xaKXBs",
+    "url": "https://www.google.com/maps/d/viewer?mid=1quCvltNflQL2RYt-FwBXX0Sr3xaKXBs",
+    "title": "Amsterdam · Clothes & Design",
+    "count": 13,
+    "verifiedPublic": true
+  },
+  "types/art": {
+    "mapId": "1Uii2MiJL3PPinOKy03zjXJu_w2G4vFw",
+    "url": "https://www.google.com/maps/d/viewer?mid=1Uii2MiJL3PPinOKy03zjXJu_w2G4vFw",
+    "title": "Amsterdam · Art & Photography",
+    "count": 11,
+    "verifiedPublic": true
+  },
+  "types/bars-music": {
+    "mapId": "1rdUmHR8Y-XkHtAY75JxR57Fzm0Tk71I",
+    "url": "https://www.google.com/maps/d/viewer?mid=1rdUmHR8Y-XkHtAY75JxR57Fzm0Tk71I",
+    "title": "Amsterdam · Bars & Music",
+    "count": 3,
+    "verifiedPublic": true
+  },
+  "types/markets": {
+    "mapId": "1CDfI2THUE5sty128dy6rk18RRKq-Aq0",
+    "url": "https://www.google.com/maps/d/viewer?mid=1CDfI2THUE5sty128dy6rk18RRKq-Aq0",
+    "title": "Amsterdam · Markets & Walks",
+    "count": 3,
+    "verifiedPublic": true
+  }
+}
