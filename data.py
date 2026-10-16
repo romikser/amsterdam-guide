@@ -137,6 +137,14 @@ PLACES = [
  ('Bakers & Roasters De Pijp','de-pijp','breakfast','New Zealand–Brazilian all-day breakfast on a quieter De Pijp corner.','https://bakersandroasters.com/','Bakers & Roasters Eerste Jacob van Campenstraat 54 Amsterdam','Official site: Eerste Jacob van Campenstraat 54; Mon–Fri 08:30–15:00, weekends 08:30–16:00. Popular at peak brunch hours; do not assume immediate seating.',None),
  ('Staring at Jacob','oud-west','breakfast','Hearty American-soul brunch by the canal after an Oud-West wander.','https://www.staringatjacob.nl/','Staring at Jacob Jacob van Lennepkade 215 Amsterdam','Official site identifies entrance at Jacob van Lennepkade 215 and offers table booking. Confirm same-day hours and book a weekend table.',None),
  ('Kessens','jordaan','breakfast','A neighbourhood breakfast table on Rozengracht, with savoury plates as well as pastries.','https://www.kessensamsterdam.nl/en/','Kessens Rozengracht 24 Amsterdam','Official site: Rozengracht 24; Mon–Fri 08:30–16:00, Sat–Sun 09:00–17:00. On the Jordaan edge; check any change before making a special trip.',None),
+ ('Belly Pepper','oud-west','breakfast','Modern Turkish breakfast and brunch: çılbır, simit, börek and tahini-led sweets.','https://www.instagram.com/belly.pepper/','Belly Pepper De Clercqstraat 128 Amsterdam','Instagram-led discovery, corroborated by De Buik and the restaurant listing: De Clercqstraat 128. Current listing shows breakfast/brunch service; check Instagram before going.',None),
+ ('Bakkerij Louf Oud-West','oud-west','breakfast','Neighbourhood bakery for slow-fermented bread, croissants, coffee and a quick morning table.','https://www.bakkerijlouf.nl/locations','Bakkerij Louf Bilderdijkstraat 38 Amsterdam','Official locations page: Bilderdijkstraat 38, daily 08:00–15:00. Instagram posts repeatedly flag the croissants and early sell-outs; go before noon for the broadest choice.',None),
+ ('Fort Negen','de-baarsjes','breakfast','One of Amsterdam’s strongest bread-and-pastry stops, with a sandwich bar next door.','https://www.fortnegen.nl/','Fort Negen Jan Evertsenstraat 31 Amsterdam','I amsterdam and current listings confirm Jan Evertsenstraat 31, De Baarsjes; published hours are Mon–Sat 08:00–18:00, Sun 08:00–16:00. Instagram is useful for pastry availability.',None),
+ ("Flo's Deli Utrechtsestraat",'centrum','breakfast','Hand-rolled New York-style bagels, schmears and breakfast sandwiches.','https://flosdeli.nl/','Flo\'s Deli Utrechtsestraat Amsterdam','Official site confirms the hand-rolled bagel offer; the brand’s Instagram lists the Utrechtsestraat branch. Check the current branch address and hours before walking over.',None),
+ ('BagelBoy Albert Cuyp','de-pijp','breakfast','Amsterdam sourdough bagels near the market, good for a fast breakfast or takeaway.','https://www.bagelboyshop.com/','BagelBoy Albert Cuypstraat 190 Amsterdam','Brand Instagram lists Albert Cuypstraat 190; official site says fresh sourdough bagels daily. Branch hours can shift, so check the current profile.',None),
+ ('Florentin Brunch','de-pijp','breakfast','Tel Aviv-inspired all-day brunch with egg dishes, coffee and a sunny De Pijp room.','https://www.florentinbrunch.com/','Florentin Brunch Eerste Sweelinckstraat 20 Amsterdam','Official site and Instagram list Eerste Sweelinckstraat 20; Instagram currently says daily from 09:00, kitchen closing around 15:30 weekdays/16:00 weekends.',None),
+ ('LOCALS','de-pijp','breakfast','All-day brunch and specialty coffee by Albert Cuypmarkt, with a distinctly local café feel.','https://www.instagram.com/locals.amsterdam/','LOCALS De Pijp Amsterdam','Instagram-led discovery: the account describes its De Pijp location near Albert Cuypmarkt and all-day brunch/specialty coffee. Confirm the exact entrance and hours before publishing a visit plan.',None),
+ ('Eggs Benaddicted De Pijp','de-pijp','breakfast','Eggs Benedict, pancakes and breakfast plates close to Albert Cuypmarkt.','https://www.instagram.com/eggs_benaddicted.amsterdam/','Eggs Benaddicted Eerste van der Helststraat 62 Amsterdam','Instagram account and current listings identify Eerste van der Helststraat 62; recent posts confirm active De Pijp service. Check same-day hours.',None),
 ]
 # Breakfast is also a use-case for a few existing café and food cards. Keep
 # their primary category and venue identity intact; list each only once in the
@@ -144,7 +152,7 @@ PLACES = [
 BREAKFAST_NAMES = [
  'De Wasserette','Bakers & Roasters De Pijp','Little Collins',
  'Scandinavian Embassy','Uncommon','Staring at Jacob','Kessens',
- 'SAINT-JEAN Bakery',
+ 'SAINT-JEAN Bakery','Belly Pepper','Bakkerij Louf Oud-West','Fort Negen',"Flo's Deli Utrechtsestraat",'BagelBoy Albert Cuyp','Florentin Brunch','LOCALS','Eggs Benaddicted De Pijp',
 ]
 # Exact public post links have been checked against accessible captions; no disclosure visible is not proof of an unpaid post.
 DISCOVERY_SOURCES = {
@@ -173,5 +181,13 @@ DISCOVERY_SOURCES = {
  'Rush Hour':[('Rush Hour · jazz selection, Jun 2026','https://www.instagram.com/p/DaA8FOSCDAd/'),('Trommel · specialist record-store guide','https://trommelmusic.com/featured/digging-deep-amsterdam-record-stores-guide/')],
  'Concrete':[('Concrete · Y-3 collection, Jul 2025','https://instagram.com/p/DMK_Vn1iv1k')],
  'Foam — Hailun Ma / Kander':[('Foam · reopened with current programme, Sep 2026','https://www.instagram.com/p/Ddb0NqcF0uN/')],
- 'Huis Marseille':[('Huis Marseille · Gutierrez exhibition, Jun 2026','https://www.instagram.com/p/DZ48vANlzs9/'),('Paris Photo · independent show context, Jun 2026','https://www.instagram.com/p/DZ9z6-JEtqv/')],
+  'Huis Marseille':[('Huis Marseille · Gutierrez exhibition, Jun 2026','https://www.instagram.com/p/DZ48vANlzs9/'),('Paris Photo · independent show context, Jun 2026','https://www.instagram.com/p/DZ9z6-JEtqv/')],
+ 'Belly Pepper':[('Amsterdam food creator · modern Turkish brunch, Apr 2024','https://www.instagram.com/reel/C5c9Qevo617'),('Food creator · Turkish brunch details','https://www.instagram.com/reel/DIvnqQmIUxd')],
+ 'Bakkerij Louf Oud-West':[('Lekker Places · Louf bakery visit, Feb 2026','https://www.instagram.com/reel/DU8mMltjPV2'),('Amsterdam Coffee Festival · Louf city guide, 2026','https://www.instagram.com/reel/DVqNK-5iI8O')],
+ 'Fort Negen':[('Amsterdam Food Addict · bakery shortlist','https://www.instagram.com/reel/C7hOHSBI8Nm/'),('Fort Negen · pastry post','https://www.instagram.com/reel/DSAfECdDXKy/')],
+ "Flo's Deli Utrechtsestraat":[('Flo’s Deli · hand-rolled bagel post','https://www.instagram.com/reel/DFu3yg_okfU/'),('Amsterdam food creator · bagel spot','https://www.instagram.com/reel/DHqZIb2o-p7/')],
+ 'BagelBoy Albert Cuyp':[('BagelBoy · shop profile and locations','https://www.instagram.com/bagelboyshop/'),('Amsterdam food creator · bagel shortlist','https://www.instagram.com/reel/DYX-ne_KdDa/')],
+ 'Florentin Brunch':[('Florentin · current opening/location post','https://www.instagram.com/reel/DQgvutejKpl/'),('Amsterdam food creator · De Pijp brunch shortlist','https://www.instagram.com/reel/C1l5vhbI-aY')],
+ 'LOCALS':[('LOCALS · opening and De Pijp brunch post','https://www.instagram.com/reel/DP3wDZhEp1S')],
+ 'Eggs Benaddicted De Pijp':[('Eggs Benaddicted · current De Pijp post, Sep 2026','https://www.instagram.com/reel/DdolWpLNi2e/'),('Amsterdam food creator · brunch visit','https://www.instagram.com/reel/DZxKDLnuljj')],
 }

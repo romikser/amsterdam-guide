@@ -439,5 +439,19 @@
     "alt": "Overhead view of savoury breakfast dishes at Kessens",
     "credit": "Kessens",
     "kind": "venue-site-embed"
+  },
+  "Bakkerij Louf Oud-West": {
+    "url": "https://images.squarespace-cdn.com/content/v1/69391f5623d4d95b06fa4409/1765351268551-IZA439IP2BYCK78KPF8Z/louf-bakkerij-oud-west-1.jpg",
+    "source": "https://www.bakkerijlouf.nl/",
+    "alt": "Wooden storefront of Bakkerij Louf Oud-West with bread and pastry displays",
+    "credit": "Bakkerij Louf",
+    "kind": "venue-site-embed"
+  },
+  "Fort Negen": {
+    "url": "https://www.fortnegen.nl/cdn/shop/files/Croissant.jpg?v=1726486444&width=1500",
+    "source": "https://www.fortnegen.nl/",
+    "alt": "Croissant from Fort Negen bakery",
+    "credit": "Fort Negen",
+    "kind": "venue-site-embed"
   }
 }

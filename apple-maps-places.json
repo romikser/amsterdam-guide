@@ -862,5 +862,13 @@
     "name": "Kessens", "area": "jordaan", "type": "breakfast", "id": "",
     "query": "Kessens Rozengracht 24 Amsterdam",
     "reason": "New breakfast stop; exact Apple Maps business pin not yet verified. Use the address search."
-  }
+  },
+  {"name":"Belly Pepper","area":"oud-west","type":"breakfast","id":"","query":"Belly Pepper De Clercqstraat 128 Amsterdam","reason":"New Instagram-led breakfast stop; use the address search."},
+  {"name":"Bakkerij Louf Oud-West","area":"oud-west","type":"breakfast","id":"","query":"Bakkerij Louf Bilderdijkstraat 38 Amsterdam","reason":"New Instagram-led breakfast stop; use the address search."},
+  {"name":"Fort Negen","area":"de-baarsjes","type":"breakfast","id":"","query":"Fort Negen Jan Evertsenstraat 31 Amsterdam","reason":"New Instagram-led bakery stop; use the address search."},
+  {"name":"Flo's Deli Utrechtsestraat","area":"centrum","type":"breakfast","id":"","query":"Flo's Deli Utrechtsestraat Amsterdam","reason":"New Instagram-led breakfast stop; use the address search."},
+  {"name":"BagelBoy Albert Cuyp","area":"de-pijp","type":"breakfast","id":"","query":"BagelBoy Albert Cuypstraat 190 Amsterdam","reason":"New Instagram-led breakfast stop; use the address search."},
+  {"name":"Florentin Brunch","area":"de-pijp","type":"breakfast","id":"","query":"Florentin Brunch Eerste Sweelinckstraat 20 Amsterdam","reason":"New Instagram-led breakfast stop; use the address search."},
+  {"name":"LOCALS","area":"de-pijp","type":"breakfast","id":"","query":"LOCALS De Pijp Amsterdam Albert Cuyp","reason":"Instagram-led discovery; confirm the exact entrance on arrival."},
+  {"name":"Eggs Benaddicted De Pijp","area":"de-pijp","type":"breakfast","id":"","query":"Eggs Benaddicted Eerste van der Helststraat 62 Amsterdam","reason":"New Instagram-led breakfast stop; use the address search."}
 ]
