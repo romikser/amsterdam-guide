@@ -1,6 +1,6 @@
 from pathlib import Path
 import html, json, re, urllib.parse
-from data import AREAS,AREA_SOURCES,TYPES,PLACES
+from data import AREAS,AREA_SOURCES,TYPES,PLACES,BREAKFAST_NAMES
 from guide_export import export,LOOKUP,GOOGLE_QUERIES
 from events_data import EVENTS
 from background_data import CITY_BACKGROUND,CITY_SOURCES,AREA_BACKGROUND
@@ -59,8 +59,8 @@ def write(rel,content):
  p=ROOT/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(content,encoding='utf-8')
 area_tile_blurbs={'de-pijp':'Worker-built streets, the market, coffee and small record shops.','oud-west':'Ten Katemarkt, converted halls and independent cafés.','jordaan':'Working-class canals, galleries and second-hand records.','nine-streets':'Seventeenth-century canal crossings and independent browsing.','centrum':'The medieval core, with better shops off the busiest strip.','haarlemmerbuurt':'A historic westward route of cafés and independent shopfronts.','canal-belt':'Planned canals, photography museums and deep record digging.','oost':'Dappermarkt, Javastraat and a slower green edge.','noord':'A ferry, a reclaimed shipyard and large-scale street art.','museumkwartier':'Rijks, Van Gogh and Stedelijk in one museum district.','de-baarsjes':'Amsterdam School brickwork and a quieter coffee detour.'}
 area_tiles=''.join(tile(v[0],area_tile_blurbs[k],v[2],f'neighbourhoods/{k}.html') for k,v in AREAS.items())
-type_images={'coffee-matcha':'de-pijp','street-food':'market','restaurants':'oost','vinyl':'centrum','clothes':'nine-streets','art':'museumkwartier','bars-music':'noord','markets':'oud-west'}
-type_blurbs={'coffee-matcha':'Tea-forward stops and properly made coffee.','street-food':'Roti rolls, onigiri, sandwiches, burgers and market bites.','restaurants':'Worth arranging a table—or leaving flexible.','vinyl':'Jazz, soul, city-pop luck and electronic records.','clothes':'Independent stores, sharp labels and Dutch design.','art':'Photography and contemporary work first; the classics remain optional.','bars-music':'Cocktails, wine and dates that actually overlap.','markets':'Working streets and the pleasure of an unscheduled walk.'}
+type_images={'breakfast':'de-pijp','coffee-matcha':'de-pijp','street-food':'market','restaurants':'oost','vinyl':'centrum','clothes':'nine-streets','art':'museumkwartier','bars-music':'noord','markets':'oud-west'}
+type_blurbs={'breakfast':'A proper morning meal: early plates, slow brunches and bakeries with something to eat.','coffee-matcha':'Tea-forward stops and properly made coffee.','street-food':'Roti rolls, onigiri, sandwiches, burgers and market bites.','restaurants':'Worth arranging a table—or leaving flexible.','vinyl':'Jazz, soul, city-pop luck and electronic records.','clothes':'Independent stores, sharp labels and Dutch design.','art':'Photography and contemporary work first; the classics remain optional.','bars-music':'Cocktails, wine and dates that actually overlap.','markets':'Working streets and the pleasure of an unscheduled walk.'}
 type_tiles=''.join(tile(name,type_blurbs[k],type_images[k],f'types/{k}.html') for k,name in TYPES.items())
 hero='<section class="hero"><div class="eyebrow">Pocket directory / Amsterdam</div><h1>Amsterdam<span style="color:#087549">.</span></h1><p>An old river port, planned canals, worker-built streets and a former shipyard across the IJ: Amsterdam changes character block by block. Start with the city’s layers below, then browse by neighbourhood or by what you want to do.</p>'+export('all','amsterdam','All stops',PLACES)+'</section>'
 home=hero+context_block('How the city grew',CITY_BACKGROUND,CITY_SOURCES)+'<section class="section"><div class="section-head"><h2>In the city</h2><a href="events.html">All events →</a></div><p class="intro">A short edit of music, print, photography and city-wide dates—not every listing in town.</p><div class="cards">'+''.join(event_card(EVENTS[i]) for i in (0,6,9))+'</div></section><section class="section"><div class="section-head"><h2>Neighbourhoods</h2><a href="neighbourhoods/index.html">See all →</a></div><div class="tiles">'+area_tiles+'</div></section><section class="section"><div class="section-head"><h2>Place types</h2><a href="types/index.html">See all →</a></div><div class="tiles">'+type_tiles+'</div></section>'
@@ -90,7 +90,8 @@ for slug,(name,blurb,img) in AREAS.items():
  if slug=='de-pijp':sub+='<p class="note">On marathon Sunday, markets are shut and several bordering roads are affected. Keep the day flexible; use the organiser’s route and live GVB planner.</p>'
  write(f'neighbourhoods/{slug}.html',shell(name,head+area_context+sub+sections,'../','neighbourhoods/index.html'))
 for slug,name in TYPES.items():
- rows=[r for r in PLACES if r[2]==slug]
+ rows=([next(r for r in PLACES if r[0]==venue) for venue in BREAKFAST_NAMES]
+       if slug=='breakfast' else [r for r in PLACES if r[2]==slug])
  sections=''
  for a,(label,_,_) in AREAS.items():
   group=[r for r in rows if r[1]==a]

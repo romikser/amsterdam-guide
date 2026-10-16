@@ -842,5 +842,25 @@
     "reason": "",
     "apple_title": "The New Originals",
     "apple_destination": "The New Originals, Zeedijk 57, 1012 AS Amsterdam, Netherlands"
+  },
+  {
+    "name": "De Wasserette", "area": "de-pijp", "type": "breakfast", "id": "",
+    "query": "De Wasserette Eerste van der Helststraat 27 Amsterdam",
+    "reason": "New breakfast stop; exact Apple Maps business pin not yet verified. Use the address search."
+  },
+  {
+    "name": "Bakers & Roasters De Pijp", "area": "de-pijp", "type": "breakfast", "id": "",
+    "query": "Bakers & Roasters Eerste Jacob van Campenstraat 54 Amsterdam",
+    "reason": "New breakfast stop; exact Apple Maps business pin not yet verified. Use the address search."
+  },
+  {
+    "name": "Staring at Jacob", "area": "oud-west", "type": "breakfast", "id": "",
+    "query": "Staring at Jacob Jacob van Lennepkade 215 Amsterdam",
+    "reason": "New breakfast stop; exact Apple Maps business pin not yet verified. Use the address search."
+  },
+  {
+    "name": "Kessens", "area": "jordaan", "type": "breakfast", "id": "",
+    "query": "Kessens Rozengracht 24 Amsterdam",
+    "reason": "New breakfast stop; exact Apple Maps business pin not yet verified. Use the address search."
   }
 ]

@@ -71,10 +71,18 @@ def export(scope,slug,title,rows,prefix=''):
             writer.writerow([n,location,area,typ,site,note])
     url=guide_url('Amsterdam · '+title,[p['id'] for p in mapped])
     esc=lambda text:html.escape(str(text),quote=True)
-    google=HOSTED_GOOGLE[f'{scope}/{slug}']
-    assert google['verifiedPublic'] and google['count']==len(rows) and google['title']=='Amsterdam · '+title
-    assert google['url']=='https://www.google.com/maps/d/viewer?mid='+google['mapId']
-    h=f'<div class="export-box"><div class="export-actions"><a class="export-button" href="{esc(url)}" target="_blank" rel="noopener" aria-label="Open {esc(title)} in Apple Maps as a Guide">Open Apple Maps Guide · {len(mapped)} places ↗</a><a class="export-button" href="{esc(google["url"])}" target="_blank" rel="noopener" aria-label="Open {esc(title)} as a Google My Maps custom map">Open Google map · {len(rows)} stops ↗</a><a class="export-button secondary" href="{prefix}exports/google/{scope}/{slug}.csv" download aria-label="Download {esc(title)} for import into Google My Maps">Google My Maps CSV · {len(rows)} stops ↓</a><a class="export-button secondary" href="{prefix}exports/{scope}/{slug}.csv" download>Complete list · {len(rows)} stops ↓</a></div><p>Apple: open and choose Add to Guides. Google: open the shared My Maps custom map directly; it is not a standard Saved list and opening it does not save it to your account.</p><details class="export-caveat"><summary>Make your own Google My Maps copy</summary><p>On a computer, open <a href="https://www.google.com/mymaps" target="_blank" rel="noopener">Google My Maps ↗</a>, create a map and import the CSV. Choose Location for pins and Name for labels. Check the pins, then view your custom map in the Google Maps app under <strong>You → Maps</strong>. My Maps is separate from standard Saved lists.</p></details>'
+    google=HOSTED_GOOGLE.get(f'{scope}/{slug}')
+    google_button=''
+    map_note='The full current selection is in the CSV. No hosted custom map has been published for this category yet.'
+    if google:
+        assert google['verifiedPublic'] and google['count']<=len(rows) and google['title']=='Amsterdam · '+title
+        assert google['url']=='https://www.google.com/maps/d/viewer?mid='+google['mapId']
+        google_button=f'<a class="export-button" href="{esc(google["url"])}" target="_blank" rel="noopener" aria-label="Open {esc(title)} as a Google My Maps custom map">Open Google map · {google["count"]} stops ↗</a>'
+        map_note=('This hosted My Maps custom map predates the new breakfast stops and contains '
+                  f'{google["count"]} of {len(rows)} current stops. The current CSV contains all {len(rows)}; '
+                  'individual venue links below cover the additions.' if google['count']<len(rows) else
+                  'The hosted Google My Maps custom map is complete for this scope.')
+    h=f'<div class="export-box"><div class="export-actions"><a class="export-button" href="{esc(url)}" target="_blank" rel="noopener" aria-label="Open {esc(title)} in Apple Maps as a Guide">Open Apple Maps Guide · {len(mapped)} places ↗</a>{google_button}<a class="export-button secondary" href="{prefix}exports/google/{scope}/{slug}.csv" download aria-label="Download {esc(title)} for import into Google My Maps">Google My Maps CSV · {len(rows)} stops ↓</a><a class="export-button secondary" href="{prefix}exports/{scope}/{slug}.csv" download>Complete list · {len(rows)} stops ↓</a></div><p>Apple: open and choose Add to Guides. Google: {esc(map_note)} Opening a hosted custom map does not save it to your account as a standard Saved list.</p><details class="export-caveat"><summary>Make your own Google My Maps copy</summary><p>On a computer, open <a href="https://www.google.com/mymaps" target="_blank" rel="noopener">Google My Maps ↗</a>, create a map and import the CSV. Choose Location for pins and Name for labels. Check the pins, then view your custom map in the Google Maps app under <strong>You → Maps</strong>. My Maps is separate from standard Saved lists.</p></details>'
     if missing:
         details=''.join(f'<li><strong>{esc(p["name"])}</strong> — {esc(p["reason"])} <a href="{esc("https://maps.apple.com/?q="+urllib.parse.quote(p["query"]))}" target="_blank" rel="noopener">Search manually ↗</a></li>' for p in missing)
         h+=f'<details class="export-caveat"><summary>{len(missing)} of {len(rows)} stops have no verified Apple Maps pin; they remain in the complete CSV</summary><ul>{details}</ul></details>'

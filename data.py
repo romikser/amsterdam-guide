@@ -25,6 +25,7 @@ AREA_SOURCES = {
  'de-baarsjes':'https://www.iamsterdam.com/en/explore/neighbourhoods/bos-en-lommer-de-baarsjes/then-and-now',
 }
 TYPES = {
+ 'breakfast': 'Breakfast & Brunch',
  'coffee-matcha': 'Coffee & Matcha',
  'street-food': 'Street Food',
  'restaurants': 'Restaurants',
@@ -131,6 +132,19 @@ PLACES = [
  ('Pop Trading Company','centrum','clothes','Amsterdam skate label’s small shop near Nieuwmarkt.','https://poptradingcompany.com/pages/pop-shop','Pop Trading Company Sint Annendwarsstraat 3a Amsterdam','Sint Annendwarsstraat 3a. Official Pop Shop page lists daily 12–18; this is skatewear rather than a designer-archive stop.',None),
  ('Patta','centrum','clothes','Amsterdam-founded streetwear and sneakers on Zeedijk.','https://patta.nl/pages/stores/patta-amsterdam','Patta Zeedijk 68 Amsterdam','Zeedijk 68–70 on the official store directory. Physical releases and sizes vary; check the shop before a specific drop.',None),
  ('The New Originals','centrum','clothes','Amsterdam creative-streetwear label’s own Zeedijk store.','https://www.theneworiginals.eu/','The New Originals Zeedijk 59 Amsterdam','Zeedijk 59, confirmed on the brand site. Check current store hours; displayed online products may not be stocked there.',None),
+ # A real morning meal, rather than treating every coffee counter as breakfast.
+ ('De Wasserette','de-pijp','breakfast','Breakfast plates and specialty coffee from 07:30, just off Albert Cuypmarkt.','https://www.dewasserette.com/','De Wasserette Eerste van der Helststraat 27 Amsterdam','Official site: daily 07:30–17:00, walk-in seating; Eerste van der Helststraat 27. A useful early option, especially when a leisurely brunch is impractical.',None),
+ ('Bakers & Roasters De Pijp','de-pijp','breakfast','New Zealand–Brazilian all-day breakfast on a quieter De Pijp corner.','https://bakersandroasters.com/','Bakers & Roasters Eerste Jacob van Campenstraat 54 Amsterdam','Official site: Eerste Jacob van Campenstraat 54; Mon–Fri 08:30–15:00, weekends 08:30–16:00. Popular at peak brunch hours; do not assume immediate seating.',None),
+ ('Staring at Jacob','oud-west','breakfast','Hearty American-soul brunch by the canal after an Oud-West wander.','https://www.staringatjacob.nl/','Staring at Jacob Jacob van Lennepkade 215 Amsterdam','Official site identifies entrance at Jacob van Lennepkade 215 and offers table booking. Confirm same-day hours and book a weekend table.',None),
+ ('Kessens','jordaan','breakfast','A neighbourhood breakfast table on Rozengracht, with savoury plates as well as pastries.','https://www.kessensamsterdam.nl/en/','Kessens Rozengracht 24 Amsterdam','Official site: Rozengracht 24; Mon–Fri 08:30–16:00, Sat–Sun 09:00–17:00. On the Jordaan edge; check any change before making a special trip.',None),
+]
+# Breakfast is also a use-case for a few existing café and food cards. Keep
+# their primary category and venue identity intact; list each only once in the
+# all-city export, while the breakfast page can cross-reference them.
+BREAKFAST_NAMES = [
+ 'De Wasserette','Bakers & Roasters De Pijp','Little Collins',
+ 'Scandinavian Embassy','Uncommon','Staring at Jacob','Kessens',
+ 'SAINT-JEAN Bakery',
 ]
 # Exact public post links have been checked against accessible captions; no disclosure visible is not proof of an unpaid post.
 DISCOVERY_SOURCES = {

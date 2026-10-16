@@ -411,5 +411,33 @@
     "alt": "Mokum Vintage shop interior with clothing and skateboard displays",
     "credit": "Mokum Vintage",
     "kind": "venue-site-embed"
+  },
+  "De Wasserette": {
+    "url": "https://cdn.prod.website-files.com/608fd0780c3a70a9c402e22c/6932ba985fd7cc7325f94b19_Wasserette%207.jpg",
+    "source": "https://www.dewasserette.com/",
+    "alt": "Breakfast plates and fresh juices at a De Wasserette outdoor table",
+    "credit": "De Wasserette",
+    "kind": "venue-site-embed"
+  },
+  "Bakers & Roasters De Pijp": {
+    "url": "https://my.pocketmenu.nl/uploads/images/websites/bakers-roasters/crop_rectangle/bakersroasters-51s-1.jpg",
+    "source": "https://bakersandroasters.com/",
+    "alt": "Latte art being poured at Bakers & Roasters",
+    "credit": "Bakers & Roasters",
+    "kind": "venue-site-embed"
+  },
+  "Staring at Jacob": {
+    "url": "https://www.staringatjacob.nl/_next/static/media/Staring%20at%20Jacob%200075Staring%20at%20Jacob-february-2024%20groot.0t5faw2544z4t.jpeg",
+    "source": "https://www.staringatjacob.nl/",
+    "alt": "Brunch sandwich held above a plate at Staring at Jacob",
+    "credit": "Staring at Jacob",
+    "kind": "venue-site-embed"
+  },
+  "Kessens": {
+    "url": "https://www.kessensamsterdam.nl/wp-content/uploads/2023/03/Kessens_20-scaled-1905x800.jpg",
+    "source": "https://www.kessensamsterdam.nl/en/",
+    "alt": "Overhead view of savoury breakfast dishes at Kessens",
+    "credit": "Kessens",
+    "kind": "venue-site-embed"
   }
 }
