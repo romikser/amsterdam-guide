@@ -30,8 +30,13 @@ def shell(title,body,prefix='',active=''):
  return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="description" content="A concise, photo-led Amsterdam directory: local coffee, art, vinyl, independent clothes, food and neighbourhood walks."><title>{H(title)} · Amsterdam / Field Guide</title><link rel="stylesheet" href="{prefix}style.css"></head><body><header><nav aria-label="Primary"><a class="brand" href="{prefix}index.html">AMS<span>/</span>FIELD GUIDE</a><div class="navlinks">{nav}</div></nav></header><main>{body}</main><footer><span>Independent city directory · researched October 2026 · recheck hours and bookings</span><a href="{prefix}credits.html">Photo sources & licences</a></footer></body></html>'''
 
 def tile(name,description,key,href,prefix=''):
- c=credits[key]
- return f'<a class="tile" href="{prefix}{href}"><img loading="lazy" src="{prefix}{H(c["local"])}" alt="{H(c["title"].removeprefix("File:"))}"><div class="tile-copy"><h3>{H(name)}</h3><p>{H(description)}</p></div></a>'
+ if href=='types/breakfast.html':
+  breakfast_photo=remote_images['De Wasserette']
+  image=f'<img loading="lazy" referrerpolicy="no-referrer" src="{H(breakfast_photo["url"])}" alt="{H(breakfast_photo["alt"])}">'
+ else:
+  c=credits[key]
+  image=f'<img loading="lazy" src="{prefix}{H(c["local"])}" alt="{H(c["title"].removeprefix("File:"))}">'
+ return f'<a class="tile" href="{prefix}{href}">{image}<div class="tile-copy"><h3>{H(name)}</h3><p>{H(description)}</p></div></a>'
 
 def card(row,prefix=''):
  name,area,typ,summary,site,query,detail,_=row
